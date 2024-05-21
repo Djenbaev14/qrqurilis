@@ -53,7 +53,6 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth'], function () {
         Route::post('/update/{menu}', 'update')->name('dashboard.menu.update');
 
         // // delete
-        // Route::post('/post-delete/{post}', 'destroy')->name('dashboard.posts.post.destroy');
     });
 
     
@@ -96,17 +95,6 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth'], function () {
         // index
         Route::get('/', 'index')->name('dashboard.appeal.index');
 
-        // create
-        // Route::get('create', 'create')->name('dashboard.post.create');
-        // Route::post('store','store')->name('dashboard.post.store');
-        // // // edit
-        // Route::get('/edit/{post}', 'edit')->name('dashboard.post.edit');
-
-        // // // update
-        // Route::post('/update/post/{post}', 'update')->name('dashboard.post.update');
-
-        // // // delete
-        // Route::post('/delete/{post}', 'destroy')->name('dashboard.post.destroy');
     });
 
 });

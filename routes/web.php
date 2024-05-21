@@ -25,8 +25,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// 932670731
-// 995786600
 
 
 

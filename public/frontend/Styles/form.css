@@ -1,0 +1,154 @@
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 15px;
+  align-items: start;
+
+  position: relative;
+}
+
+.form .address-inputBox {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.form .radio-box {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.form .phone-varification {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.form .name-inputBox,
+.form .surname-inputBox,
+.form .email-inputBox,
+.form .address-inputBox,
+.form .message-inputBox,
+.phone-varification .phone-inputBox,
+.phone-varification .varification-code_inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.form input,
+.form textarea {
+  background-color: #f2f2f2;
+  padding: 8px 12px 8px 20px;
+  border: none;
+  border-radius: 23px;
+  box-shadow: inset 0 3px 6px 0 rgba(50, 50, 50, 0.1);
+}
+
+.form .radio-box input {
+  background-color: transparent !important;
+  box-shadow: unset;
+}
+
+.form textarea {
+  height: 130px;
+  resize: none;
+}
+
+.form .radio-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form .radio-box p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+  font-size: 15px;
+}
+
+.form .radio-box button#file-upload_btn {
+  padding: 8px 32px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #666;
+}
+
+.form .phone-varification {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.form .phone-varification .phone-inputBox {
+  width: 335px;
+}
+
+.form .phone-varification .varification-code_inputBox {
+  width: 160px;
+}
+
+.varification-code_inputBox input::-webkit-inner-spin-button,
+.varification-code_inputBox input::-webkit-outer-spin-button {
+  display: none;
+}
+
+/* Submit Button */
+
+.submit-btn {
+  background-color: #005fbe;
+  padding: 10px 18px;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .form {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  /* .form input,
+  .form textarea {
+    width: 730px;
+  } */
+
+  .form .radio-box {
+    flex-direction: column;
+    align-items: start;
+    /* width: 730px; */
+  }
+
+  .form .radio-box p {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .form .radio-box p input {
+    width: auto;
+  }
+
+  .form .phone-varification {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .form .phone-varification {
+    width: 100%;
+  }
+
+  .form .phone-varification .phone-inputBox,
+  .form .phone-varification .varification-code_inputBox {
+    width: 100%;
+  }
+}

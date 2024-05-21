@@ -11,11 +11,6 @@ use App\Http\Controllers\frontend\VirtualController;
 use App\Http\Controllers\LocalizationController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-|--------------------------------------------------------------------------
-|
-*/
 
 
 // login

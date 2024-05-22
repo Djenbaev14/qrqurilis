@@ -3,6 +3,8 @@
 @push('css')
 <!-- SimpleMDE css -->
   <link rel="stylesheet" href="{{ asset('admin/css/colorbox.css') }}">
+  <link href="assets/vendor/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/vendor/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
 @endpush
 
 @section('title', 'Довавить меню')
@@ -48,7 +50,7 @@
           @foreach (config('app.available_locales') as $local)
               
             <div class="tab-pane <?=($local['lang']=='ru' ? 'show active' : '')?>" id="page_{{$local['lang']}}" style="overflow: auto">
-              <table class="table table-bordered table-centered mb-0 text-center">
+              <table class="table dt-responsive nowrap w-100 table-bordered table-centered mb-0 text-center" id="basic-datatable">
                 <thead>
                     <tr>
                         <th>ИД</th>
@@ -102,3 +104,13 @@
 
          
 @endsection
+
+@push('js')
+  <script src="assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+  <script src="assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+
+  <!-- Datatable Init js -->
+  <script src="assets/js/pages/demo.datatable-init.js"></script>
+@endpush

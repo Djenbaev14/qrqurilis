@@ -464,7 +464,7 @@
               <div class="section-top">
                 <h1 class="title">{{Str::upper(__('messages.statistics'))}}</h1>
               </div>
-              <div style="width: 535px; height: 401px">
+              <div >
                 <canvas id="myChart"></canvas>
                 <div id="chartVals"></div>
               </div>

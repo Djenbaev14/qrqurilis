@@ -61,7 +61,3 @@
   </div>
 </div>
 @endsection
-
-@push('csss')
-  <link rel="stylesheet" href="{{asset('frontend/Styles/about.css')}}" />
-@endpush

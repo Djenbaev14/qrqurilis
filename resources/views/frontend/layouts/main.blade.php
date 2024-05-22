@@ -13,6 +13,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       />
+      <link rel="stylesheet" href="{{asset('frontend/Styles/about.css')}}" />
+      <link rel="stylesheet" href="{{asset('frontend/Styles/form.css')}}" />
       @stack('css')
   </head>
 

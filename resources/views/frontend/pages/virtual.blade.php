@@ -21,9 +21,6 @@
   </div>
 </div>
 @endsection
-@push('css')
-  <link rel="stylesheet" href="{{asset('frontend/Styles/form.css')}}" />
-@endpush
 @push('js')
   @livewireScripts
 @endpush

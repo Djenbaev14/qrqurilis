@@ -18,13 +18,14 @@ class SendSms extends Component
                     Session::forget('expiresAt');
                 }
             }else{
-                $url_login = "notify.eskiz.uz/api/auth/login";;
+                $url_login = "notify.eskiz.uz/api/auth/login";
         
                 $auth = Http::post($url_login, [
                     'email' => config('app.SMS_EMAIL'),
                     'password' => config('app.SMS_PASSWORD'),
                 ]);
                 $auth = $auth->json();
+                dd($auth);
                 if ($auth['message'] == 'token_generated') {
                     $url = "notify.eskiz.uz/api/message/sms/send";
                     $ran=random_int(1000,9999);

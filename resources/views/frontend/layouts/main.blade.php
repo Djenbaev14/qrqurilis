@@ -21,65 +21,61 @@
         @yield('main-content')
         @include('frontend.components.footer')
   
-        
         @stack('js')
         @include('sweetalert::alert',['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 
-        
-      <script src="https://kit.fontawesome.com/32ee8f9848.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/32ee8f9848.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+        <script>
+            const headerTop = document.querySelector(".header-top");
+            const header = document.querySelector(".header");
 
-     
-      
-      <script>
-          const headerTop = document.querySelector(".header-top");
-          const header = document.querySelector(".header");
+            window.addEventListener("scroll", () => {
+              if (window.pageYOffset >= 100) {
+                headerTop.style.transform = "translateY(-100px)";
+                header.style.marginTop = 0;
+              } else {
+                headerTop.style.transform = "translateY(0)";
+                header.style.marginTop = `${
+                  headerTop.getBoundingClientRect().height
+                }px`;
+              }
+            });
+        </script>
 
-          window.addEventListener("scroll", () => {
-            if (window.pageYOffset >= 100) {
-              headerTop.style.transform = "translateY(-100px)";
-              header.style.marginTop = 0;
-            } else {
-              headerTop.style.transform = "translateY(0)";
-              header.style.marginTop = `${
-                headerTop.getBoundingClientRect().height
-              }px`;
-            }
-          });
-      </script>
-
-      <script>
-        const maps = document.querySelectorAll(".jqvmap-region");
-        maps.forEach((regionMap, index) => {
-          // Hover Effect
-          regionMap.addEventListener("mouseover", () => {
-            regionMap.setAttribute("fill", "#6c7ba3");
-          });
-
-          regionMap.addEventListener("mouseleave", () => {
-            regionMap.setAttribute("fill", regionMap.getAttribute("original"));
-          });
-          // ==============================
-
-          // Selecting
-          regionMap.addEventListener("click", () => {
-            const currentRegion = regionMap.id.split("_");
-            document.querySelector(".areaTitle").innerHTML =
-              currentRegion[currentRegion.length - 1];
-
-            regionMap.classList.add("active");
-            maps.forEach((element, elementID) => {
-              if (elementID !== index) element.classList.remove("active");
+        <script>
+          const maps = document.querySelectorAll(".jqvmap-region");
+          maps.forEach((regionMap, index) => {
+            // Hover Effect
+            regionMap.addEventListener("mouseover", () => {
+              regionMap.setAttribute("fill", "#6c7ba3");
             });
 
-            const adminName = regionMap.getAttribute("data-admin");
-            document.querySelector("#admin-id").innerHTML = adminName;
+            regionMap.addEventListener("mouseleave", () => {
+              regionMap.setAttribute("fill", regionMap.getAttribute("original"));
+            });
+            // ==============================
 
-            const adminPhone = regionMap.getAttribute("data-admin-phone");
-            document.querySelector("#admin-phone").innerHTML = adminPhone;
+            // Selecting
+            regionMap.addEventListener("click", () => {
+              const currentRegion = regionMap.id.split("_");
+              document.querySelector(".areaTitle").innerHTML =
+                currentRegion[currentRegion.length - 1];
+
+              regionMap.classList.add("active");
+              maps.forEach((element, elementID) => {
+                if (elementID !== index) element.classList.remove("active");
+              });
+
+              const adminName = regionMap.getAttribute("data-admin");
+              document.querySelector("#admin-id").innerHTML = adminName;
+
+              const adminPhone = regionMap.getAttribute("data-admin-phone");
+              document.querySelector("#admin-phone").innerHTML = adminPhone;
+            });
           });
-        });
-      </script>
+        </script>
     </body>
     
 </html> 

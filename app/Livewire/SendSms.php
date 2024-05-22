@@ -12,8 +12,10 @@ class SendSms extends Component
 
     public function updatedPhone(){
         if(strlen($this->phone) == 9){
+            $now = time();
+            $one_minutes = $now + (1 * 60);
             if(Session::has('expiresAt')){
-                if(now() > session()->get('expiresAt')){
+                if(date('m-d-Y H:i:s', $now) > session()->get('expiresAt')){
                     Session::forget('verification_code');
                     Session::forget('expiresAt');
                 }
@@ -25,7 +27,6 @@ class SendSms extends Component
                     'password' => config('app.SMS_PASSWORD'),
                 ]);
                 $auth = $auth->json();
-                dd($auth);
                 if ($auth['message'] == 'token_generated') {
                     $url = "notify.eskiz.uz/api/message/sms/send";
                     $ran=random_int(1000,9999);
@@ -33,13 +34,13 @@ class SendSms extends Component
                         'Authorization' => 'Bearer ' . $auth['data']['token'],
                         ])->post($url, [
                             'mobile_phone' => '998'.$this->phone,
-                            "message" => "Qrqurilis.uz sms kodi:" . $ran,
+                            "message" => "Qrqurilis.uz sms kodi:".' '.$ran,
                         ]);
                         
                     $resposnse = $resposnse->json();
                     
                     Session::put('verification_code', $ran);
-                    Session::put('expiresAt', now()->addMinutes(1));
+                    Session::put('expiresAt', date('m-d-Y H:i:s', $one_minutes));
                 }
         
                 return $resposnse;

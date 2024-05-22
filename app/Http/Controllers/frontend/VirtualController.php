@@ -94,7 +94,8 @@ class VirtualController extends Controller
         $appeal_code='';
         DB::beginTransaction();
         try {
-            if(Session::has('expiresAt') && Session::has('expiresAt') && now() <= session()->get('expiresAt') && $request->verifyCode == session('verification_code')){
+            $now = time();
+            if(Session::has('expiresAt') && Session::has('expiresAt') && date('m-d-Y H:i:s', $now) <= session()->get('expiresAt') && $request->verifyCode == session('verification_code')){
                             if($request->has('file')){
                                 $file=$request->file('file');
                                 $file_name = $file->getClientOriginalName(); 

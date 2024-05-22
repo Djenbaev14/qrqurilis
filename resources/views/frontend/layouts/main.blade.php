@@ -78,6 +78,13 @@
             });
           });
         </script>
+
+        <script>
+          const headerTopBar = document.querySelector(".header-top_bar");
+          headerTopBar.addEventListener("click", () => {
+            document.querySelector(".header-menu").classList.toggle("active");
+          });
+        </script>
     </body>
     
 </html> 

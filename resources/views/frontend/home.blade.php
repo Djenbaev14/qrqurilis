@@ -957,7 +957,6 @@
     </main>
 @endsection
 @push('css')
-  <link rel="stylesheet" href="{{asset('frontend/Styles/styles.css')}}" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 @endpush
 @push('js')

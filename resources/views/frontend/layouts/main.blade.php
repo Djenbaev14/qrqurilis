@@ -8,6 +8,7 @@
       O'zbekiston Respublikasi Qurilish va uy-joy kommunal xo'jaligi vazirligi
     </title>
     <link rel="icon" href="{{asset('frontend/images/logo.png')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/Styles/styles.css')}}" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"

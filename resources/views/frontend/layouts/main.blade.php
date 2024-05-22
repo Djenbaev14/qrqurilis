@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="{{asset('frontend/Styles/form.css')}}" />
     <link rel="stylesheet" href="{{asset('frontend/Styles/about.css')}}" />
     <link rel="icon" href="{{asset('frontend/images/logo.png')}}" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+      />
+      @stack('css')
   </head>
 
     <body>
@@ -35,7 +35,6 @@
       <!-- ===================================================================== -->
 
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      
       
       <script>

@@ -17,9 +17,7 @@
       <!-- Section latest news -->
       <section class="section-news">
         <div class="container">
-          
-          <div class="section-inner">
-            <!-- Section top -->
+          <!-- Section top -->
           <div class="section-top">
             <h1 class="title">{{__('messages.news')}}</h1>
             <button>
@@ -29,6 +27,7 @@
             </button>
           </div>
           <!-- ------------------------------------------ -->
+          <div class="section-inner">
             <div class="newsCards-box">
               @foreach ($posts as $post)
                   
@@ -64,16 +63,82 @@
               @endforeach
               
             </div>
+            <div class="announcement-sidebar">
+              <div class="announcements-list">
+                <div class="announcement ad-1">
+                  <div class="bg"></div>
+                  <h1>e'lon</h1>
+                  <img
+                    src="{{asset('files/icons/speaker.png')}}"
+                    alt="speaker-icon"
+                  />
+                  <p>05-Fevral, 2024</p>
+                  <a href="#">batafsil</a>
+                  <button>barcha e'lonlar</button>
+                </div>
+                <div class="announcement ad-2">
+                  <h1>oz'bekiston bunyodkori</h1>
+                  <p>ijtimoiy-iqtisodiy gazeta</p>
+                </div>
+                <div class="announcement ad-3">
+                  <img src="{{asset('files/house.png')}}" alt="" />
+                  <p>ZILZILABARDOSH UY</p>
+                </div>
+                <ul class="announcement ad-4">
+                  <li>
+                    <a href="#">
+                      <img src="{{asset('files/icons/water.svg')}}" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{{asset('files/icons/teplo.png')}}" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{{asset('files/icons/het.png')}}" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{{asset('files/icons/hududgaz.png')}}" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{{asset('files/icons/logo_mah.png')}}" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section latest news -->
+      {{-- <section class="section-news">
+        <div class="container">
+          <div class="section-inner">
+            <!-- Section top -->
+            <div class="section-top">
+              <h1 class="title">{{__('messages.news')}}</h1>
+              <button>
+                <a href="#"
+                  >{{__('messages.all_news')}} <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </button>
+            </div>
+            <!-- ------------------------------------------ -->
+            <div class="newsCards-box">1
+            </div>
           </div>
           <div class="announcement-sidebar">
             <div class="announcements-list">
               <div class="announcement ad-1">
                 <div class="bg"></div>
                 <h1>e'lon</h1>
-                <img
-                  src="{{asset('files/icons/speaker.png')}}"
-                  alt="speaker-icon"
-                />
+                <img src="./src/images/icons/speaker.png" alt="speaker-icon" />
                 <p>05-Fevral, 2024</p>
                 <a href="#">batafsil</a>
                 <button>barcha e'lonlar</button>
@@ -83,40 +148,40 @@
                 <p>ijtimoiy-iqtisodiy gazeta</p>
               </div>
               <div class="announcement ad-3">
-                <img src="{{asset('files/house.png')}}" alt="" />
+                <img src="./src/images/house.png" alt="" />
                 <p>ZILZILABARDOSH UY</p>
               </div>
               <ul class="announcement ad-4">
                 <li>
                   <a href="#">
-                    <img src="{{asset('files/icons/water.svg')}}" alt="" />
+                    <img src="./src/images/icons/water.svg" alt="" />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="{{asset('files/icons/teplo.png')}}" alt="" />
+                    <img src="./src/images/icons/teplo.png" alt="" />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="{{asset('files/icons/het.png')}}" alt="" />
+                    <img src="./src/images/icons/het.png" alt="" />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="{{asset('files/icons/hududgaz.png')}}" alt="" />
+                    <img src="./src/images/icons/hududgaz.png" alt="" />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="{{asset('files/icons/logo_mah.png')}}" alt="" />
+                    <img src="./src/images/icons/logo_mah.png" alt="" />
                   </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
 
       <!-- Section E-systems -->
       <section class="section-eSystems">
@@ -465,7 +530,7 @@
               <div class="section-top">
                 <h1 class="title">{{Str::upper(__('messages.statistics'))}}</h1>
               </div>
-              <div >
+              <div>
                 <canvas id="myChart"></canvas>
                 <div id="chartVals"></div>
               </div>
@@ -973,59 +1038,59 @@
 
   <script>
     
-    // Statistics
-    const doughnut = document.getElementById("myChart");
-    const renderVals = document.createElement("div");
+  // Statistics
+  const doughnut = document.getElementById("myChart");
+  const renderVals = document.createElement("div");
 
-    const vals = [
-      { title: "Ko'p qavatli uylar", value: 40789 },
-      { title: "Boshqaruv kompaniyalar soni", value: 812 },
-      { title: "Shirkatlar soni", value: 117 },
-    ];
-    const backgroundColors = [
-      "rgba(255, 99, 132, 1)",
-      "rgba(54, 162, 235, 1)",
-      "rgba(255, 206, 86, 1)",
-    ];
+  const vals = [
+    { title: "Ko'p qavatli uylar", value: 40789 },
+    { title: "Boshqaruv kompaniyalar soni", value: 812 },
+    { title: "Shirkatlar soni", value: 117 },
+  ];
+  const backgroundColors = [
+    "rgba(255, 99, 132, 1)",
+    "rgba(54, 162, 235, 1)",
+    "rgba(255, 206, 86, 1)",
+  ];
 
-    new Chart(doughnut, {
-      type: "doughnut",
-      data: {
-        labels: vals.map((item) => item.title),
-        datasets: [
-          {
-            label: ["# value"],
-            data: vals.map((item) => item.value),
-            borderWidth: 0,
-            backgroundColor: backgroundColors,
-          },
-        ],
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
+  new Chart(doughnut, {
+    type: "doughnut",
+    data: {
+      labels: vals.map((item) => item.title),
+      datasets: [
+        {
+          label: ["# value"],
+          data: vals.map((item) => item.value),
+          borderWidth: 0,
+          backgroundColor: backgroundColors,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
         },
       },
-    });
+    },
+  });
 
-    renderVals.innerHTML = `
-      <p>
-        <span>${vals[0].title}</span>
-        <span style="color: ${backgroundColors[0]}">${vals[0].value}</span>
-      </p>
-      <p>
-        <span>${vals[1].title}</span>
-        <span style="color: ${backgroundColors[1]}">${vals[1].value}</span>
-      </p>
-      <p>
-        <span>${vals[2].title}</span>
-        <span style="color: ${backgroundColors[2]}">${vals[2].value}</span>
-      </p>
-    `;
-    renderVals.classList.add("renderVals");
+  renderVals.innerHTML = `
+    <p>
+      <span>${vals[0].title}</span>
+      <span style="color: ${backgroundColors[0]}">${vals[0].value}</span>
+    </p>
+    <p>
+      <span>${vals[1].title}</span>
+      <span style="color: ${backgroundColors[1]}">${vals[1].value}</span>
+    </p>
+    <p>
+      <span>${vals[2].title}</span>
+      <span style="color: ${backgroundColors[2]}">${vals[2].value}</span>
+    </p>
+  `;
+  renderVals.classList.add("renderVals");
 
-    document.getElementById("chartVals").appendChild(renderVals);
+  document.getElementById("chartVals").appendChild(renderVals);
   </script>
 @endpush

@@ -42,7 +42,6 @@ class SendSms extends Component
                 }
         
                 return $resposnse;
-    
             }
         }
         

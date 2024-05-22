@@ -388,19 +388,14 @@ section {
 
 /* Section News ===================== */
 
-.section-news .container {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.section-news .announcement-sidebar {
-  transform: translateY(-60px);
-}
-
 .section-news .section-inner {
   display: flex;
-  flex-direction: column;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.section-news .section-top {
+  width: 77%;
 }
 
 .newsCards-box {
@@ -542,6 +537,11 @@ section {
 /* ===================================================================== */
 /* Announcements - Sidebar */
 
+.announcement-sidebar {
+  max-width: 400px;
+  width: 100%;
+}
+
 .announcements-list {
   display: flex;
   flex-direction: column;
@@ -560,6 +560,7 @@ section {
   border-radius: 8px;
   overflow: hidden;
   background: none;
+  margin-top: -70px;
 }
 
 .announcement.ad-1 .bg {
@@ -927,7 +928,7 @@ section {
 /* Section Regional Administration ============================== */
 
 .section-administrations {
-  background: url("../images/mapBgBuilding.png");
+  background: url("../../files/mapBgBuilding.png");
   background-position: 50% 102%;
   background-size: 550px 350px;
   background-repeat: no-repeat;
@@ -1342,19 +1343,11 @@ section {
     display: none;
   }
 
-  .section-news .container {
+  .section-news .section-inner {
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .section-news .section-inner {
-    align-items: center;
-  }
-
-  .section-news .section-top {
-    width: 90%;
   }
 
   .section-news .newsCards-box {
@@ -1366,6 +1359,11 @@ section {
 
   .newsCards-box .newsCard {
     height: 100%;
+  }
+
+  .section-news .section-top {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .section-top .title {
@@ -1381,9 +1379,15 @@ section {
     display: block !important;
   }
 
-  .announcement-sidebar {
-    transform: translateY(0) !important;
-    width: 90% !important;
+  .announcements-list {
+    max-width: 350px !important;
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .announcement.ad-1 {
+    margin-top: 0;
+    width: 100% !important;
   }
 
   .videos-box,

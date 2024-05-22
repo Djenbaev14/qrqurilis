@@ -968,5 +968,5 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  <script src="{{asset('frontend/js/app.js')}}" type="module"></script>
+  <script src="{{asset('frontend/js/app.js')}}"></script>
 @endpush

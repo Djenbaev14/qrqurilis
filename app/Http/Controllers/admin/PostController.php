@@ -13,7 +13,7 @@ use Illuminate\Support\Str;
 class PostController extends Controller
 {
     public function index(){
-        $posts=Post::orderBy('id','desc')->paginate(1);
+        $posts=Post::orderBy('id','desc')->paginate(20);
         return view('admin.pages.posts.index',compact('posts'));
     }
 

@@ -83,16 +83,16 @@
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                           data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                            {{-- <img src="{{asset('files/no-image.jpg')}}" class="img-uploaded mb-2" style="display: block; width: 200px">
-                            <input type="file" name="image" value="{{old('image')}}" class="form-control"> --}}
+                            <img src="{{asset('files/no-image.jpg')}}" class="img-uploaded mb-2" style="display: block; width: 200px">
+                            <input type="file" name="image" value="{{old('image')}}" class="form-control">
                             
-                            <div class="form-group mb-5">
+                            {{-- <div class="form-group mb-5">
                               <label for="image">Изображение статьи</label>
                               <img src="{{asset('files/no-image.jpg')}}" class=" mb-2" style="display: block; width: 200px">
                               <input type="text" class="form-control" id="feature_image" name="image feature_image" value=""
                                   readonly>
                               <a href="" class="btn btn-secondary mt-3 rounded-0 popup_selector" data-inputid="feature_image"><i class="fa fa-images"></i> Выбрать</a>
-                            </div>
+                            </div> --}}
                             
                           </div>
                       </div>

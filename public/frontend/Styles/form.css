@@ -74,7 +74,13 @@
   border-radius: 4px;
   color: #666;
 }
-
+.form .phone-varification .timer {
+  position: absolute;
+  bottom: -25px;
+  left: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
 .form .phone-varification {
   display: flex;
   align-items: center;

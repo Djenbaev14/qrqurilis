@@ -16,10 +16,7 @@ window.addEventListener("scroll", () => {
 });
 
 header.style.marginTop = `${headerTop.getBoundingClientRect().height}px`;
-mainElement.style.marginTop = `${
-  headerTop.getBoundingClientRect().height +
-  header.getBoundingClientRect().height
-}px`;
+
 
 
 // ====================================================================
@@ -110,16 +107,3 @@ var swiper = new Swiper(".resourceSwiper", {
 });
 
 // To Top button
-
-window.addEventListener("scroll", () => {
-  console.log(window.pageYOffset)
-  if (window.pageYOffset >= 200) {
-    toTopBtn.classList.add("active");
-  } else {
-    toTopBtn.classList.remove("active");
-  }
-});
-
-toTopBtn.addEventListener("click", () => {
-  window.scrollTo(0, 0);
-});

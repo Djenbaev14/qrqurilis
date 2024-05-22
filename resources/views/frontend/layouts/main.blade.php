@@ -36,42 +36,11 @@
 
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script src="{{asset('frontend/js/app.js')}}" type="module"></script>
-      <script>
-        const headerTop = document.querySelector(".header-top");
-        const header = document.querySelector(".header");
-        const toTopBtn = document.querySelector(".toTop-btn");
-  
-        window.addEventListener("scroll", () => {
-          if (window.pageYOffset >= 100) {
-            headerTop.style.transform = "translateY(-100px)";
-            header.style.marginTop = 0;
-          } else {
-            headerTop.style.transform = "translateY(0)";
-            header.style.marginTop = `${
-              headerTop.getBoundingClientRect().height
-            }px`;
-          }
-        });
-  
-        window.addEventListener("scroll", () => {
-          console.log(window.pageYOffset);
-          if (window.pageYOffset >= 200) {
-            toTopBtn.classList.add("active");
-          } else {
-            toTopBtn.classList.remove("active");
-          }
-        });
-  
-        toTopBtn.addEventListener("click", () => {
-          window.scrollTo(0, 0);
-        });
-      </script>
+     
       
       <script>
         const headerTop = document.querySelector(".header-top");
         const header = document.querySelector(".header");
-        const toTopBtn = document.querySelector(".toTop-btn");
 
         window.addEventListener("scroll", () => {
           if (window.pageYOffset >= 100) {
@@ -83,19 +52,6 @@
               headerTop.getBoundingClientRect().height
             }px`;
           }
-        });
-
-        window.addEventListener("scroll", () => {
-          console.log(window.pageYOffset);
-          if (window.pageYOffset >= 200) {
-            toTopBtn.classList.add("active");
-          } else {
-            toTopBtn.classList.remove("active");
-          }
-        });
-
-        toTopBtn.addEventListener("click", () => {
-          window.scrollTo(0, 0);
         });
       </script>
 

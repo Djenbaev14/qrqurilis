@@ -60,36 +60,6 @@
                 </div>
               </div>
               
-              {{-- <div class="newsCard">
-                <div class="card-imageBox">
-                  <img src="{{asset('uploads/'.$post->image)}}" alt="image-news" />
-                  <div class="image-date">
-                    <p>{{$post->created_at->format('d')}}</p>
-                    <p>{{$post->created_at->format('M')}}, {{$post->created_at->format('Y')}}</p>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                    impedit amet qui consequuntur mollitia officia iste!
-                    Quibusdam animi incidunt quae qui tempora non repellendus!
-                  </p>
-                  <div class="card-bottom">
-                    <a class="card-moreInfo title" href="#">batafsil</a>
-                    <ul class="social-links">
-                      <li class="social-link">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                      </li>
-                      <li class="social-link">
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                      </li>
-                      <li class="social-link">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div> --}}
               @endforeach
               
             </div>
@@ -986,3 +956,7 @@
       </section>
     </main>
 @endsection
+
+@push('js')
+  <script src="{{asset('frontend/js/app.js')}}" type="module"></script>
+@endpush

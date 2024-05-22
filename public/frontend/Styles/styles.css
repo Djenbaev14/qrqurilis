@@ -1011,7 +1011,7 @@ section {
 /* Document Section ===================================== */
 
 .document-section {
-  background-image: url("../images/documentBg.png");
+  background-image: url("../../files/documentBg.png");
   height: 100%;
   background-size: cover;
   background-position: center center;

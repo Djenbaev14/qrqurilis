@@ -8,8 +8,6 @@
       O'zbekiston Respublikasi Qurilish va uy-joy kommunal xo'jaligi vazirligi
     </title>
     <link rel="stylesheet" href="{{asset('frontend/Styles/styles.css')}}" />
-    <link rel="stylesheet" href="{{asset('frontend/Styles/form.css')}}" />
-    <link rel="stylesheet" href="{{asset('frontend/Styles/about.css')}}" />
     <link rel="icon" href="{{asset('frontend/images/logo.png')}}" />
     <link
       rel="stylesheet"
@@ -30,28 +28,24 @@
         
       <script src="https://kit.fontawesome.com/32ee8f9848.js" crossorigin="anonymous"></script>
 
-      <!-- Swiper Js -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <!-- ===================================================================== -->
 
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
      
       
       <script>
-        const headerTop = document.querySelector(".header-top");
-        const header = document.querySelector(".header");
+          const headerTop = document.querySelector(".header-top");
+          const header = document.querySelector(".header");
 
-        window.addEventListener("scroll", () => {
-          if (window.pageYOffset >= 100) {
-            headerTop.style.transform = "translateY(-100px)";
-            header.style.marginTop = 0;
-          } else {
-            headerTop.style.transform = "translateY(0)";
-            header.style.marginTop = `${
-              headerTop.getBoundingClientRect().height
-            }px`;
-          }
-        });
+          window.addEventListener("scroll", () => {
+            if (window.pageYOffset >= 100) {
+              headerTop.style.transform = "translateY(-100px)";
+              header.style.marginTop = 0;
+            } else {
+              headerTop.style.transform = "translateY(0)";
+              header.style.marginTop = `${
+                headerTop.getBoundingClientRect().height
+              }px`;
+            }
+          });
       </script>
 
       <script>

@@ -23,3 +23,8 @@
     </div>
   </div>
 @endsection
+
+@push('css')
+    
+  <link rel="stylesheet" href="{{asset('frontend/Styles/about.css')}}" />
+@endpush

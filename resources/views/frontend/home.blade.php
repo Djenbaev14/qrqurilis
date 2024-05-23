@@ -171,7 +171,7 @@
               <div class="announcement ad-1">
                 <div class="bg"></div>
                 <h1>e'lon</h1>
-                <img src="./src/images/icons/speaker.png" alt="speaker-icon" />
+                <img src="{{asset('files/icons/speaker.png')}}" alt="speaker-icon" />
                 <p>05-Fevral, 2024</p>
                 <a href="#">batafsil</a>
                 <button>barcha e'lonlar</button>
@@ -181,33 +181,33 @@
                 <p>ijtimoiy-iqtisodiy gazeta</p>
               </div>
               <div class="announcement ad-3">
-                <img src="./src/images/house.png" alt="" />
+                <img src="{{asset('files/house.png')}}" alt="" />
                 <p>ZILZILABARDOSH UY</p>
               </div>
               <ul class="announcement ad-4">
                 <li>
                   <a href="#">
-                    <img src="./src/images/icons/water.svg" alt="" />
+                    <img src="{{asset('files/icons/water.svg')}}" alt="" />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="./src/images/icons/teplo.png" alt="" />
+                    <img src="{{asset('files/icons/teplo.png')}}" alt="" />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="./src/images/icons/het.png" alt="" />
+                    <img src="{{asset('files/icons/het.png')}}" alt="" />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="./src/images/icons/hududgaz.png" alt="" />
+                    <img src="{{asset('files/icons/hududgaz.png')}}" alt="" />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="./src/images/icons/logo_mah.png" alt="" />
+                    <img src="{{asset('files/icons/logo_mah.png')}}" alt="" />
                   </a>
                 </li>
               </ul>

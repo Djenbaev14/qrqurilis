@@ -15,7 +15,7 @@
       <!-- =========================================================== -->
 
       <!-- Section latest news -->
-      <section class="section-news">
+      {{-- <section class="section-news">
         <div class="container">
           <!-- Section top -->
           <div class="section-top">
@@ -115,9 +115,9 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- Section latest news -->
-      {{-- <section class="section-news">
+      </section> --}}
+
+      <section class="section-news">
         <div class="container">
           <div class="section-inner">
             <!-- Section top -->
@@ -130,7 +130,40 @@
               </button>
             </div>
             <!-- ------------------------------------------ -->
-            <div class="newsCards-box">1
+            <div class="newsCards-box">
+              
+              @foreach ($posts as $post)
+                  
+              <div class="newsCard">
+                <div class="card-imageBox">
+                  <img src="{{asset('uploads/'.$post->image)}}" alt="image-news" />
+                  <div class="image-date">
+                    <p>{{$post->created_at->format('d')}}</p>
+                    <p>{{$post->created_at->format('M')}}, {{$post->created_at->format('Y')}}</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-desc">
+                    {{$post->$title}}
+                  </p>
+                  <div class="card-bottom">
+                    <a class="card-moreInfo title" href="{{route('new-new',$post->$slug)}}">{{__('messages.more')}}</a>
+                    <ul class="social-links">
+                      <li class="social-link">
+                        <a href="https://www.instagram.com/minstroykomxoz"><i class="fa-brands fa-instagram"></i></a>
+                      </li>
+                      <li class="social-link">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li class="social-link">
+                        <a href="https://www.facebook.com/rk.minstroy"><i class="fa-brands fa-facebook"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              @endforeach
             </div>
           </div>
           <div class="announcement-sidebar">
@@ -181,8 +214,7 @@
             </div>
           </div>
         </div>
-      </section> --}}
-
+      </section>
       <!-- Section E-systems -->
       <section class="section-eSystems">
         <div class="container">

@@ -3,6 +3,7 @@
 @push('css')
 <!-- SimpleMDE css -->
   <link rel="stylesheet" href="{{ asset('admin/css/colorbox.css') }}">
+  <link href="assets/vendor/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
 @endpush
 
 @section('title', 'Довавить меню')
@@ -25,13 +26,13 @@
               <div class="card-block p-3 mt-3" style="background: #fff" >
                 <div class="card-body d-flex justify-content-between align-items-center">
                   <h4 class="card-title">Все пост</h4>
-                  <a href="{{route('dashboard.pages.create')}}" class="card-button btn btn-primary">Добавить страницу</a>
+                  <a href="{{route('dashboard.post.create')}}" class="card-button btn btn-primary">Добавить пост</a>
                 </div>
               </div>
             </div>
         </div>
         <div class="card p-4" style="overflow: auto">
-          <ul class="nav nav-tabs nav-bordered mb-3">
+          {{-- <ul class="nav nav-tabs nav-bordered mb-3">
             @foreach (config('app.available_locales') as $local)
             <li class="nav-item">
                 <a href="#page_{{$local['lang']}}" data-bs-toggle="tab" aria-expanded="false" class="nav-link <?=($local['lang']=='ru' ? 'active' : '')?>">
@@ -43,29 +44,70 @@
                 </a>
             </li>
             @endforeach
-        </ul>
+          </ul>
         
-        <div class="tab-content" >
-          @foreach (config('app.available_locales') as $local)
-              
-            <div class="tab-pane <?=($local['lang']=='ru' ? 'show active' : '')?>" id="page_{{$local['lang']}}" style="overflow: auto">
-              <table class="table table-bordered table-centered mb-0 text-center">
-                <thead>
-                    <tr>
-                        <th>ИД</th>
-                        <th>ЗАГОЛОВОК</th>
-                        <th>ВРЕМЯ</th>
-                        <th>ДЕЙСТВИЯ</th>
-                    </tr>
-                </thead>
+          <div class="tab-content" >
+            @foreach (config('app.available_locales') as $local)
+                
+              <div class="tab-pane <?=($local['lang']=='ru' ? 'show active' : '')?>" id="page_{{$local['lang']}}" style="overflow: auto">
+                <table class="table table-bordered table-centered mb-0 text-center">
+                  <thead>
+                      <tr>
+                          <th>ИД</th>
+                          <th>ЗАГОЛОВОК</th>
+                          <th>ВРЕМЯ</th>
+                          <th>ДЕЙСТВИЯ</th>
+                      </tr>
+                  </thead>
+                  @forelse ($posts as $post)
+                    <tbody>
+                      <tr>
+                          <td>{{$post->id}}</td>
+                          <?php 
+                            $lang='title_'.$local['lang'];
+                          ?>
+                          <td>{{$post->$lang}}</td>
+                          <td>{{$post->created_at}}</td>
+                          <td class="d-flex">
+                            <a href="{{route('dashboard.post.edit',$post->id)}}" class="btn btn-warning btn-sm float-left mr-1 mb-1">
+                                <i class="ri-edit-box-line"></i>
+                            </a>
+                            <form action="{{route('dashboard.post.destroy',$post->id)}}" method="post">
+                                @csrf
+                                <button class="btn btn-danger btn-sm float-left mr-1 mb-1"> <i class="
+                                ri-delete-bin-5-fill"></i></button>
+                            </form>
+                          </td>
+                      </tr>
+                    </tbody>
+                  @empty
+                      <tr>
+                          <td colspan="5" class="text-center">
+                              <h4>Страницы нет</h4>
+                          </td>
+                      </tr>
+                  @endforelse
+                </table>
+                <p class="d-flex justify-content-end">{{$posts->links('pagination::bootstrap-4')}}</p>
+              </div>
+            @endforeach
+          </div> --}}
+          
+          <div class="tab-pane" style="overflow: auto">
+            <table class="table " id="datatable-buttons">
+              <thead>
+                  <tr>
+                      <th>ИД</th>
+                      <th>ЗАГОЛОВОК</th>
+                      <th>ВРЕМЯ</th>
+                      <th>ДЕЙСТВИЯ</th>
+                  </tr>
+              </thead>
+              <tbody>
                 @forelse ($posts as $post)
-                  <tbody>
                     <tr>
                         <td>{{$post->id}}</td>
-                        <?php 
-                          $lang='title_'.$local['lang'];
-                        ?>
-                        <td>{{$post->$lang}}</td>
+                        <td>{{$post->title_qr}}</td>
                         <td>{{$post->created_at}}</td>
                         <td class="d-flex">
                           <a href="{{route('dashboard.post.edit',$post->id)}}" class="btn btn-warning btn-sm float-left mr-1 mb-1">
@@ -78,7 +120,6 @@
                           </form>
                         </td>
                     </tr>
-                  </tbody>
                 @empty
                     <tr>
                         <td colspan="5" class="text-center">
@@ -86,11 +127,10 @@
                         </td>
                     </tr>
                 @endforelse
-              </table>
-              <p class="d-flex justify-content-end">{{$posts->links('pagination::bootstrap-4')}}</p>
-            </div>
-          @endforeach
-        </div>
+            </tbody>
+            </table>
+            <p class="d-flex justify-content-end">{{$posts->links('pagination::bootstrap-4')}}</p>
+          </div>
         </div>
         <!-- end page title -->
              
@@ -102,3 +142,10 @@
 
          
 @endsection
+@push('js')
+  <script src="assets/vendor/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="assets/vendor/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+  <script src="assets/vendor/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="assets/vendor/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="assets/vendor/datatables.net-buttons/js/buttons.print.min.js"></script>
+@endpush

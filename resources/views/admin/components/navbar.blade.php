@@ -48,7 +48,7 @@
 
 
                         <li class="side-nav-item">
-                            <a href="apps-calendar.html" class="side-nav-link">
+                            <a href="#" class="side-nav-link">
                                 <i class="uil-home-alt"></i>
                                 <span> Главный </span>
                             </a>

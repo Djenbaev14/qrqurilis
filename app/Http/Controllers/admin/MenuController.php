@@ -16,7 +16,7 @@ class MenuController extends Controller
         // $menus=Menu::orderBy( 'created_at', 'desc')->get();
         $items=Item::orderBy('created_at','desc')->get();
         $menus=Menu::orderBy('created_at','desc')->get();
-
+        return $items;
         // return gettype(array($menus[0]->menu_item->pluck('item_id')));
         return view('admin.pages.menus.index',compact('items','menus'));
     }

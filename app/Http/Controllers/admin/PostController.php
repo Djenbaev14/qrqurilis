@@ -8,6 +8,7 @@ use App\Models\Item;
 use App\Models\Menu;
 use App\Models\Post;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class PostController extends Controller
@@ -27,9 +28,6 @@ class PostController extends Controller
             'title_uz'=>'required',
             'title_ru'=>'required',
             'title_qr'=>'required',
-            'body_uz'=>'required',
-            'body_ru'=>'required',
-            'body_qr'=>'required',
             'image'=>'required|mimes:jpg,png,jpeg'
         ]);
 
@@ -48,23 +46,33 @@ class PostController extends Controller
         $slug_ru = $count_ru ? "{$slug_ru}-{$count_ru}" : $slug_ru;
         $slug_uz = $count_uz ? "{$slug_uz}-{$count_uz}" : $slug_uz;
 
+        DB::beginTransaction();
+        try {
 
-        $post = new Post();
-        $post->user_id = auth()->user()->id;
-        $post->category_id = 1;
-        $post->title_qr = $request->title_qr;
-        $post->body_qr = $request->body_qr;
-        $post->title_ru = $request->title_ru;
-        $post->body_ru = $request->body_ru;
-        $post->title_uz = $request->title_uz;
-        $post->body_uz = $request->body_uz;
-        $post->slug_ru = $slug_ru;
-        $post->slug_qr = $slug_qr;
-        $post->slug_uz = $slug_uz;
-        $post->image=$filename;
-        $post->save();
+            $post = new Post();
+            $post->user_id = auth()->user()->id;
+            $post->category_id = 1;
+            $post->title_qr = $request->title_qr;
+            $post->body_qr = $request->body_qr;
+            $post->title_ru = $request->title_ru;
+            $post->body_ru = $request->body_ru;
+            $post->title_uz = $request->title_uz;
+            $post->body_uz = $request->body_uz;
+            $post->slug_ru = $slug_ru;
+            $post->slug_qr = $slug_qr;
+            $post->slug_uz = $slug_uz;
+            $post->image=$filename;
+            $post->save();
+            
+            DB::commit();
+        } catch (\Throwable $th) {
+            DB::rollBack();
+            return 1;
+            // alert()->error('Пост не создано');
+            // return redirect()->route('dashboard.post.index');
+        }
 
-        toast('Пост успешно создан','success');
+        alert()->success('Пост успешно создан');
         
         return redirect()->route('dashboard.post.index');
     }

@@ -50,7 +50,7 @@
                               @forelse ($items as $i=> $item)
                                 <div class="form-check">
                                     <input type="checkbox" name="items[]" value="{{$item->id}}" class="form-check-input" id="check{{$item->id}}">
-                                    <label class="form-check-label" for="check{{$item->id}}">{{$item->title_ru}}</label>
+                                    <label class="form-check-label" for="check{{$item->id}}">{{$item->title_qr}}</label>
                                 </div>
                               @empty
                                 <span class="d-flex justify-content-center alert alert-danger">Нет Страницы</span>
@@ -75,7 +75,7 @@
                           <h2 class="accordion-header" id="flush-headingOne">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                   data-bs-target="#flush-collapseOne{{$menu->id}}" aria-expanded="false" aria-controls="flush-collapseOne{{$menu->id}}">
-                                  {{$menu->item->title_ru}}
+                                  {{$menu->item->title_qr}}
                               </button>
                           </h2>
                             @csrf
@@ -86,12 +86,12 @@
                                   @if (in_array($item->id, json_decode(json_encode($menu->menu_item->pluck('item_id'))), true))
                                     <div class="form-check">
                                       <input type="checkbox" checked name="items[{{$menu->id}}][]" value="{{$item->id}}" class="form-check-input" id="check{{$item->id}}">
-                                      <label class="form-check-label" for="check{{$item->id}}">{{$item->title_ru}}</label>
+                                      <label class="form-check-label" for="check{{$item->id}}">{{$item->title_qr}}</label>
                                     </div>
                                     @else
                                     <div class="form-check">
                                       <input type="checkbox"  name="items[{{$menu->id}}][]" value="{{$item->id}}" class="form-check-input" id="check{{$item->id}}">
-                                      <label class="form-check-label" for="check{{$item->id}}">{{$item->title_ru}}</label>
+                                      <label class="form-check-label" for="check{{$item->id}}">{{$item->title_qr}}</label>
                                     </div>
                                   @endif
                                   @empty

@@ -69,7 +69,7 @@
 
             @if ($menu->menu_item->count()>0)
               <li class="header-menu_item">
-                <a href="{{route('page-2',$menu->item->slug)}}">{{Str::upper($menu->item->$title)}}</a>
+                <a href="#">{{Str::upper($menu->item->$title)}}</a>
                 <ul class="col-1 drop-down_items">
                   @foreach ($menu->menu_item as $m_item)
                     <li class="drop-down_item">

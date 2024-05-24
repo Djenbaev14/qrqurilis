@@ -95,6 +95,7 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth'], function () {
         // index
         Route::get('/', 'index')->name('dashboard.appeal.index');
 
+        // Route::get('create', 'create')->name('dashboard.post.create'
     });
 
 });

@@ -3,7 +3,9 @@
 @push('css')
 <!-- SimpleMDE css -->
   <link rel="stylesheet" href="{{ asset('admin/css/colorbox.css') }}">
-  <link href="assets/vendor/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+  <!-- Datatables css -->
+  <link href="assets/vendor/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/vendor/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
 @endpush
 
 @section('title', 'Довавить меню')
@@ -25,8 +27,8 @@
             <div class="col-12">
               <div class="card-block p-3 mt-3" style="background: #fff" >
                 <div class="card-body d-flex justify-content-between align-items-center">
-                  <h4 class="card-title">Все пост</h4>
-                  <a href="{{route('dashboard.post.create')}}" class="card-button btn btn-primary">Добавить пост</a>
+                  <h4 class="card-title">Ҳәмме постлар</h4>
+                  <a href="{{route('dashboard.post.create')}}" class="card-button btn btn-primary">Пост косыў</a>
                 </div>
               </div>
             </div>
@@ -94,7 +96,7 @@
           </div> --}}
           
           <div class="tab-pane" style="overflow: auto">
-            <table class="table " id="datatable-buttons">
+            <table id="basic-datatable" class="table">
               <thead>
                   <tr>
                       <th>ИД</th>
@@ -143,9 +145,13 @@
          
 @endsection
 @push('js')
-  <script src="assets/vendor/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-  <script src="assets/vendor/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
-  <script src="assets/vendor/datatables.net-buttons/js/buttons.html5.min.js"></script>
-  <script src="assets/vendor/datatables.net-buttons/js/buttons.flash.min.js"></script>
-  <script src="assets/vendor/datatables.net-buttons/js/buttons.print.min.js"></script>
+<!-- Datatables js -->
+<script src="assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+
+<!-- Datatable Init js -->
+<script src="assets/js/pages/demo.datatable-init.js"></script>
+                                                
 @endpush

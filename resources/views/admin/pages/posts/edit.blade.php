@@ -24,8 +24,8 @@
             <div class="col-12">
               <div class="card-block p-3 mt-3" style="background: #fff" >
                 <div class="card-body d-flex justify-content-between align-items-center">
-                  <h4 class="card-title">Изменить страницу</h4>
-                  <a href="{{route('dashboard.pages.index')}}" class="card-button btn btn-primary">Назад</a>
+                  <h4 class="card-title">Бетти өзгертиў</h4>
+                  <a href="{{route('dashboard.pages.index')}}" class="card-button btn btn-primary">Артқа қайтыў</a>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@
                     @endforeach
                 </div>
                 <div class="d-flex justify-content-end">
-                  <button class="btn btn-primary mt-3 " type="submit" id="save">Изменить</button>
+                  <button class="btn btn-primary mt-3 " type="submit" id="save">Өзгертиў</button>
                 </div>
           </div>
       </div>

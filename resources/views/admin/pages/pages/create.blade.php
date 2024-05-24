@@ -24,8 +24,8 @@
             <div class="col-12">
               <div class="card-block p-3 mt-3" style="background: #fff" >
                 <div class="card-body d-flex justify-content-between align-items-center">
-                  <h4 class="card-title">Добавить страницу</h4>
-                  <a href="{{route('dashboard.pages.create')}}" class="card-button btn btn-primary">Назад</a>
+                  <h4 class="card-title">Бет қосыў</h4>
+                  <a href="{{route('dashboard.pages.create')}}" class="card-button btn btn-primary">Артқа қайтыў</a>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@
                   {{-- <a class="w-100 btn btn-success add-more-btn">Add</a> --}}
                   <div class="row">
                       <div class="col-12 mt-3">
-                          <button class="btn btn-primary" type="submit" id="save">Добавить</button>
+                          <button class="btn btn-primary" type="submit" id="save">Қосыў</button>
                       </div>
                   </div>
             </form>

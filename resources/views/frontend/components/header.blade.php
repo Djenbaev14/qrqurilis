@@ -30,8 +30,195 @@
           <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <div class="specialView">
+          
+          <div class="specialView" id="spec-btn" style="position: relative">
             <i class="fa-regular fa-eye"></i>
+            <div class="special-window">
+              <h4 class="spec-title">Ko'rinish</h4>
+              <div class="view-change spec-box">
+                <button
+                  class="btn btn-sm btn-default"
+                  style="
+                    border: 1px solid gray;
+                    background-color: transparent;
+                  "
+                  id="c1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-image"
+                  >
+                    <rect
+                      x="3"
+                      y="3"
+                      width="18"
+                      height="18"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                </button>
+                <button
+                  class="btn btn-sm btn-dark"
+                  style="
+                    background: gray;
+                    color: #fff;
+                    border: 1px solid gray;
+                  "
+                  id="c2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-image"
+                  >
+                    <rect
+                      x="3"
+                      y="3"
+                      width="18"
+                      height="18"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                </button>
+                <button
+                  class="btn btn-sm btn-info"
+                  style="
+                    background-color: #0dcaf0;
+                    border: 1px solid #0dcaf0;
+                    color: #000;
+                  "
+                  id="c3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-image"
+                  >
+                    <rect
+                      x="3"
+                      y="3"
+                      width="18"
+                      height="18"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                </button>
+                <button
+                  class="btn btn-sm btn-primary"
+                  style="
+                    background-color: #1e285e;
+                    color: #fff;
+                    border: 1px solid #0d6efd;
+                  "
+                  id="c4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-refresh-cw"
+                  >
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <polyline points="1 20 1 14 7 14"></polyline>
+                    <path
+                      d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <h4 class="spec-title">Shrift o'lchami</h4>
+              <div class="fontSize-change spec-box">
+                <button
+                  class="btn btn-sm btn-default"
+                  style="background-color: transparent; border: none"
+                  id="a1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-zoom-in"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </button>
+                <button
+                  class="btn btn-sm btn-default"
+                  style="background-color: transparent; border: none"
+                  id="a0"
+                >
+                  <i class="fa fa-font fa-2x"></i>
+                </button>
+                <button
+                  class="btn btn-sm btn-default"
+                  style="background-color: transparent; border: none"
+                  id="a2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-zoom-out"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
           <div class="languages">
             <i class="fa-solid fa-globe"></i>

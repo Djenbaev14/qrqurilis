@@ -24,8 +24,8 @@
             <div class="col-12">
               <div class="card-block p-3 mt-3" style="background: #fff" >
                 <div class="card-body d-flex justify-content-between align-items-center">
-                  <h4 class="card-title">Добавит меню</h4>
-                  <a href="" class="card-button btn btn-primary">Назад</a>
+                  <h4 class="card-title">Меню қосыў</h4>
+                  <a href="" class="card-button btn btn-primary">Артқа қайтыў</a>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <button class="btn btn-primary" type="submit" id="save">Добавить</button>
+                        <button class="btn btn-primary" type="submit" id="save">Қосыў</button>
                     </div>
                 </div>
             </form>

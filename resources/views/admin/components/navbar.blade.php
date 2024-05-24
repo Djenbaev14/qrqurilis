@@ -48,7 +48,7 @@
 
 
                         <li class="side-nav-item">
-                            <a href="#" class="side-nav-link">
+                            <a href="{{route('dashboard.index')}}" class="side-nav-link">
                                 <i class="uil-home-alt"></i>
                                 <span> Главный </span>
                             </a>
@@ -58,19 +58,19 @@
                         <li class="side-nav-item">
                           <a data-bs-toggle="collapse" href="#pages" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">
                               <i class="ri-pages-fill"></i>
-                              <span> Страницы </span>
+                              <span> Бетлер </span>
                               <span class="menu-arrow"></span>
                           </a>
                           <div class="collapse" id="pages">
                             <ul class="side-nav-second-level">
                               <li class="side-nav-item">
                                   <a href="{{route('dashboard.pages.index')}}" class="side-nav-link">
-                                      <span> Все  страницы</span>
+                                      <span> Ҳәмме бетлер</span>
                                   </a>
                               </li>
                               <li class="side-nav-item">
                                   <a href="{{route('dashboard.pages.create')}}" class="side-nav-link">
-                                      <span> Добавит  страницу</span>
+                                      <span> Бет қосыў</span>
                                   </a>
                               </li>
                             </ul>
@@ -94,12 +94,12 @@
                             <ul class="side-nav-second-level">
                               <li class="side-nav-item">
                                   <a href="{{route('dashboard.post.index')}}" class="side-nav-link">
-                                      <span> Все  пост</span>
+                                      <span> Ҳәмме  постлар</span>
                                   </a>
                               </li>
                               <li class="side-nav-item">
                                   <a href="{{route('dashboard.post.create')}}" class="side-nav-link">
-                                      <span> Добавит  пост</span>
+                                      <span>Пост қосыў</span>
                                   </a>
                               </li>
                               

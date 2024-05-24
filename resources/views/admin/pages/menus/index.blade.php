@@ -24,7 +24,7 @@
             <div class="col-12">
               <div class="card-block p-3 mt-3" style="background: #fff" >
                 <div class="card-body d-flex justify-content-between align-items-center">
-                  <h4 class="card-title">Все меню</h4>
+                  <h4 class="card-title">Ҳәмме менюлар</h4>
                 </div>
               </div>
             </div>
@@ -32,7 +32,7 @@
           <!-- start page title -->
           <div class="row mb-3">
             <div class="col-3">
-              <h5>Добавьте элементы меню</h5>
+              <h5>Меню елементлерин қосыў</h5>
               <div class="card-block p-2" style="background: #fff" >
                 <form action="{{route('dashboard.menu.store')}}" method="post">
                   @csrf
@@ -41,7 +41,7 @@
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                 aria-expanded="false" aria-controls="collapseOne">
-                                Страницы
+                                Бетлер
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -53,20 +53,20 @@
                                     <label class="form-check-label" for="check{{$item->id}}">{{$item->title_qr}}</label>
                                 </div>
                               @empty
-                                <span class="d-flex justify-content-center alert alert-danger">Нет Страницы</span>
+                                <span class="d-flex justify-content-center alert alert-danger">Бетлер жоқ</span>
                               @endforelse
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-end <?=(count($items)>0) ? 'd-flex' : 'd-none';?>">
-                  <button class="btn btn-primary mt-3 " type="submit" id="save">Добавить в меню</button>
+                  <button class="btn btn-primary mt-3 " type="submit" id="save">Менюға қосыў</button>
                 </div>               
                 </form>
               </div>
             </div>
             <div class="col-9">
-              <h5>Структура меню</h5>
+              <h5>Меню дүзилиси</h5>
               <form action="{{route('dashboard.menu.item_add')}}" method="post">
                 <div class="card-block p-2" style="background: #fff" >
                   @forelse ($menus as $menu)
@@ -95,16 +95,16 @@
                                     </div>
                                   @endif
                                   @empty
-                                  <span class="d-flex justify-content-center alert alert-danger">Нет Страницы</span>
+                                  <span class="d-flex justify-content-center alert alert-danger">Бетлер жоқ</span>
                                   @endforelse
                                 </div>
                             </div>
                         </div>
                     </div>
                   @empty
-                  <span class="d-flex justify-content-center alert alert-danger w-100">Нет меню</span>
+                  <span class="d-flex justify-content-center alert alert-danger w-100">Меню жоқ</span>
                   @endforelse
-                  <button class="btn btn-sm btn-primary mt-2 <?=(count($menus)>0) ? 'd-flex' : 'd-none';?>">Сохранить меню</button>
+                  <button class="btn btn-sm btn-primary mt-2 <?=(count($menus)>0) ? 'd-flex' : 'd-none';?>">Менюди сақлаў</button>
                 </div>
               </form>
               </div>

@@ -24,8 +24,8 @@
             <div class="col-12">
               <div class="card-block p-3 mt-3" style="background: #fff" >
                 <div class="card-body d-flex justify-content-between align-items-center">
-                  <h4 class="card-title">Изменить меню</h4>
-                  <a href="{{route('dashboard.menu.create')}}" class="card-button btn btn-primary">Назад</a>
+                  <h4 class="card-title">Менюди өзгертиў</h4>
+                  <a href="{{route('dashboard.menu.create')}}" class="card-button btn btn-primary">Артқа қайтыў</a>
                 </div>
               </div>
             </div>

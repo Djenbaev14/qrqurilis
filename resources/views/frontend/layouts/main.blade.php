@@ -28,7 +28,6 @@
 
         <script src="{{asset('frontend/js/app.js')}}"></script>
         <script src="{{asset('frontend/js/jquery.js')}}"></script>
-        <script src="{{asset('frontend/js/spec.js')}}"></script>
         <script src="https://kit.fontawesome.com/32ee8f9848.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

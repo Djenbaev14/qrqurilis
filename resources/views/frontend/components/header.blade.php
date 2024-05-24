@@ -242,7 +242,7 @@
 
 
 
-<header class="header">
+<header class="header" style="margin-top: 56px">
   <div class="container">
     <div class="header-inner">
       <a href="{{route('home')}}" class="logo-box">
@@ -285,3 +285,15 @@
     </div>
   </div>
 </header>
+<script src="{{asset('frontend/js/spec.js')}}"></script>
+<script>
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset >= 10) {
+        headerTop.style.transform = "translateY(-100px)";
+        header.style.marginTop = 0;
+      } else {
+        headerTop.style.transform = "translateY(0)";
+        header.style.marginTop = `${headerTop.getBoundingClientRect().height}px`;
+      }
+    });
+</script>

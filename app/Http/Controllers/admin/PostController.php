@@ -89,15 +89,15 @@ class PostController extends Controller
             'title_uz'=>'required',
             'title_ru'=>'required',
             'title_qr'=>'required',
-            'image'=>'mimes:jpg,png,jpeg'
+            // 'image'=>'mimes:jpg,png,jpeg'
             ]);
-        if($request->has('image')){
-            $file =$request->file('image');
-            $filename = $file->getClientOriginalName(); 
-            $file->move(public_path('uploads/'), $filename);
-        }else{
-            $filename = 'qrqurilis.png'; 
-        }
+            if($request->has('image')){
+                $file =$request->file('image');
+                $filename = $file->getClientOriginalName(); 
+                $file->move(public_path('uploads/'), $filename);
+            }else{
+                $filename =$post->image; 
+            }
 
             $slug_qr = Str::slug($request->title_qr);
             $slug_ru = Str::slug($request->title_ru);
@@ -126,7 +126,7 @@ class PostController extends Controller
                 return redirect()->route('dashboard.post.index');
             }
 
-            alert()->success('Сообщение успешно изменено');
+            alert()->success('Пост успешно изменено');
             
             return redirect()->route('dashboard.post.index');
 

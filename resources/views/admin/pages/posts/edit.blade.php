@@ -32,7 +32,7 @@
         </div>
           
         
-    <form action="{{route('dashboard.post.update',$post->id)}}" method="POST" class="container-fluid">
+    <form action="{{route('dashboard.post.update',$post->id)}}" method="POST" enctype="multipart/form-data" class="container-fluid">
       <div class="row mt-3">
         
         <div class="container-fluid col-9">

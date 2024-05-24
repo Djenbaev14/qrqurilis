@@ -72,7 +72,6 @@ class PostController extends Controller
         } catch (\Throwable $th) {
             DB::rollBack();
             alert()->error('Пост не создано');
-            return redirect()->route('dashboard.post.index');
         }
 
         alert()->success('Пост успешно создан');
@@ -123,7 +122,6 @@ class PostController extends Controller
             } catch (\Throwable $th) {
                 DB::rollBack();
                 alert()->error('Пост не создано');
-                return redirect()->route('dashboard.post.index');
             }
 
             alert()->success('Пост успешно изменено');

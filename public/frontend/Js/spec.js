@@ -1,7 +1,8 @@
-document.getElementById("spec-btn").addEventListener("click", (e) => {
-  e.target.parentNode.classList.toggle("active");
-});
 
+function specBtn(e) {
+  console.log(12112);
+  e.classList.toggle("active");
+}
 jQuery(document).ready(function ($) {
   $(".SpecialWindow").click(function () {
     $(".OpenSpecialWindow").slideToggle(200);

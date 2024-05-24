@@ -31,7 +31,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
           
-          <div class="specialView" id="spec-btn" style="position: relative">
+          <div class="specialView" id="spec-btn" onclick="specBtn(this)" style="position: relative">
             <i class="fa-regular fa-eye"></i>
             <div class="special-window">
               <h4 class="spec-title">Ko'rinish</h4>

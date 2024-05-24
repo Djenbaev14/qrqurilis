@@ -20,7 +20,7 @@
         <ul class="sideRow-1 sidebar-menu">
           @foreach ($categories as $category)
           <li class="sidebar-menu_item active">
-            <a href="" class="active">{{$category->$title}}</a>
+            <a href="{{route('page-2',$category->slug)}}" class="active">{{$category->$title}}</a>
           </li>
           @endforeach
           @foreach ($menus as $menu)

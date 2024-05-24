@@ -286,9 +286,9 @@
   text-transform: uppercase;
 }
 
-.col-2.content img {
+/* .col-2.content img {
   width: 70%;
-}
+} */
 
 .title-bottom {
   display: flex;

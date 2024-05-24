@@ -3,7 +3,6 @@ const header = document.querySelector(".header");
 const mainElement = document.querySelector(".main");
 const toTopBtn = document.querySelector(".toTop-btn");
 
-AOS.init();
 // function handleScroll(){
 //   if (window.pageYOffset >= 100) {
 //     headerTop.style.transform = "translateY(-100px)";

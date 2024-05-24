@@ -4,20 +4,31 @@ const mainElement = document.querySelector(".main");
 const toTopBtn = document.querySelector(".toTop-btn");
 
 AOS.init();
+// function handleScroll(){
+//   if (window.pageYOffset >= 100) {
+//     headerTop.style.transform = "translateY(-100px)";
+//     header.style.marginTop = 0;
+//   } else {
+//     headerTop.style.transform = "translateY(0)";
+//     header.style.marginTop = `${headerTop.getBoundingClientRect().height}px`;
+//   }
+// }
 
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset >= 100) {
-    headerTop.style.transform = "translateY(-100px)";
-    header.style.marginTop = 0;
-  } else {
-    headerTop.style.transform = "translateY(0)";
-    header.style.marginTop = `${headerTop.getBoundingClientRect().height}px`;
-  }
-});
+// header.style.marginTop = `${headerTop.getBoundingClientRect().height}px`;
 
-header.style.marginTop = `${headerTop.getBoundingClientRect().height}px`;
+if (window.innerWidth > 600) {
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 10) {
+      headerTop.style.transform = "translateY(-100px)";
+      header.style.marginTop = 0;
+    } else {
+      headerTop.style.transform = "translateY(0)";
+      header.style.marginTop = `${headerTop.getBoundingClientRect().height}px`;
+    }
+  });
 
-
+  header.style.marginTop = `${headerTop.getBoundingClientRect().height}px`;
+}
 
 // ====================================================================
 // ====================================================================

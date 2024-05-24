@@ -28,12 +28,16 @@ class PostController extends Controller
             'title_uz'=>'required',
             'title_ru'=>'required',
             'title_qr'=>'required',
-            'image'=>'required|mimes:jpg,png,jpeg'
+            'image'=>'mimes:jpg,png,jpeg'
         ]);
 
-        $file =$request->file('image');
-        $filename = $file->getClientOriginalName(); 
-        $file->move(public_path('uploads/'), $filename);
+        if($request->has('image')){
+            $file =$request->file('image');
+            $filename = $file->getClientOriginalName(); 
+            $file->move(public_path('uploads/'), $filename);
+        }else{
+            $filename = 'qrqurilis.png'; 
+        }
 
         
         $slug_qr = Str::slug($request->title_qr);
@@ -67,9 +71,8 @@ class PostController extends Controller
             DB::commit();
         } catch (\Throwable $th) {
             DB::rollBack();
-            return 1;
-            // alert()->error('Пост не создано');
-            // return redirect()->route('dashboard.post.index');
+            alert()->error('Пост не создано');
+            return redirect()->route('dashboard.post.index');
         }
 
         alert()->success('Пост успешно создан');

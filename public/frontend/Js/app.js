@@ -26,20 +26,20 @@ const toTopBtn = document.querySelector(".toTop-btn");
 // ===========================================
 // Swiper Js
 
-var swiper = new Swiper(".resourceSwiper", {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  autoplay: {
-    delay: 3000,
-  },
-});
+// var swiper = new Swiper(".resourceSwiper", {
+//   slidesPerView: 4,
+//   spaceBetween: 20,
+//   loop: true,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+//   autoplay: {
+//     delay: 3000,
+//   },
+// });
 
 // To Top button

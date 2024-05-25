@@ -21,13 +21,6 @@ const toTopBtn = document.querySelector(".toTop-btn");
 
 // Accordion configuration
 
-const accordionBtns = document.querySelectorAll(".accordionBtn");
-accordionBtns.forEach((button, index) => {
-  button.addEventListener("click", () => {
-    button.classList.toggle("active");
-    document.querySelectorAll(".content")[index].classList.toggle("active");
-  });
-});
 
 
 // ===========================================

@@ -35,5 +35,30 @@ return [
     'address'=>'Manzil',
     'fax'=>'Faks',
     'send_appeal'=>'Fuqaro murojaatlari bilan ishlash',
-    'virtual'=>"Murojaat"
+    'virtual'=>"Murojaat",
+
+
+    
+    // elektron tizimlar
+
+    'rating'=>"Ko'p kvartirali uy-joylarni boshqaruv organlari reytingi",
+    'reestr'=>"Ko'p kvartirali uy-joylarni boshqaruv organlari reestri",
+    'information_system_management'=>'"Mening uyim" axborot tizimi boshqaruv',
+    'consumers'=>'"Mening uyim" axborot tizimi iste\'molchilar',
+    'electronic_public_procurement_portal'=>'"Qurilish sohasida elektron davlat xarid portali',
+    'licensed_organizations'=>'Litsenziyalangan tashkilotlar reestri',
+    'examination_planning_documents'=>'“Shaharsozlik hujjatlari ekspertizasi” axborot tizimi',
+    'electronic_rating_contracting_organizations'=>'Qurilish-pudrat tashkilotlari elektron reytingi',
+    'building_electronic_platform'=>'Ko‘p kvartirali uylarni ulush kiritish asosida qurish elektron platformasi',
+    'ekspertiza'=>'Ekspertiza tashkilotlari reestri',
+
+    // INTERAKTIV XIZMATLAR
+
+    
+    'Bino va inshootning tashqi ko’rinishini o’zgartirishni kelishis'=>"Bino va inshootning tashqi ko’rinishini o’zgartirishni kelishis",
+    'Loyiha-smeta hujjatlarini kelishish'=>"Loyiha-smeta hujjatlarini kelishish",
+    'Obyektni qayta ixtisoslashtirish va rekonstruksiya qilishga ruxsatnoma berish'=>'Obyektni qayta ixtisoslashtirish va rekonstruksiya qilishga ruxsatnoma berish',
+    'Qurilish-montaj ishlarini amalga oshirishga ruxsatnoma berish'=>'Qurilish-montaj ishlarini amalga oshirishga ruxsatnoma berish',
+    'Arxitektura-rejalashtirish topshirig’ini ishlab chiqish'=>'Arxitektura-rejalashtirish topshirig’ini ishlab chiqish',
+    'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish'=>'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish'
 ];

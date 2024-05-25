@@ -35,5 +35,29 @@ return [
     'address'=>'Адрес',
     'fax'=>'Факс',
     'send_appeal'=>'Рассмотрение обращений граждан',
-    'virtual'=>"Отправить заявку"
+    'virtual'=>"Отправить заявку",
+
+    // elektron tizimlar
+
+    'rating'=>"Рейтинг органов управления многоквартирным жильем",
+    'reestr'=>"Реестр органов управления многоквартирными домами",
+    'information_system_management'=>'Информационная система "мой дом" управление',
+    'consumers'=>'Информационная система "мой дом" потребители',
+    'electronic_public_procurement_portal'=>'Электронный портал государственных закупок в строительной отрасли',
+    'licensed_organizations'=>'Реестр лицензируемых организаций',
+    'examination_planning_documents'=>'Информационная система” экспертиза градостроительной документации"',
+    'electronic_rating_contracting_organizations'=>'Электронный рейтинг строительных подрядных организаций',
+    'building_electronic_platform'=>'Электронная платформа для строительства многоквартирных домов на основе долевого участия',
+    'ekspertiza'=>'Реестр экспертных организаций',
+
+    // INTERAKTIV XIZMATLAR
+
+    
+    'Bino va inshootning tashqi ko’rinishini o’zgartirishni kelishis'=>"Изменение внешнего вида здания и сооружения",
+    'Loyiha-smeta hujjatlarini kelishish'=>"Согласование проектно-сметной документации",
+    'Obyektni qayta ixtisoslashtirish va rekonstruksiya qilishga ruxsatnoma berish'=>'Выдача разрешения на перепрофилирование и реконструкцию объекта',
+    'Qurilish-montaj ishlarini amalga oshirishga ruxsatnoma berish'=>'Выдача разрешения на проведение строительно-монтажных работ',
+    'Arxitektura-rejalashtirish topshirig’ini ishlab chiqish'=>'Разработка архитектурно-планировочного задания',
+    'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish'=>'Выдача разрешения на индивидуальное жилищное строительство (реконструкцию)'
+
 ];

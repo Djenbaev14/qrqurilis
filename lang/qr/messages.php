@@ -37,6 +37,31 @@ return [
     'address'=>'Mánzil',
     'fax'=>'Faks',
     'send_appeal'=>'Puqara múrájatleri menen islew',
-    'virtual'=>'Múrájat'
+    'virtual'=>'Múrájat',
+
+    
+    
+    // elektron tizimlar
+
+    'rating'=>"Kóp kvartirali turaq-jaylardı basqarıw shólkemleri reytingi",
+    'reestr'=>"Kóp kvartirali turaq-jaylardı basqarıw shólkemleri reestri",
+    'information_system_management'=>'"Meniń úyim" informaciya sisteması basqarıw ',
+    'consumers'=>'" Meniń úyim" informaciya sisteması qarıydarlar ',
+    'electronic_public_procurement_portal'=>'" Qurılıs salasında elektron mámleket satıp alınǵan zat portalı ',
+    'licensed_organizations'=>'Litsenziyalanǵan shólkemler reestri',
+    'examination_planning_documents'=>'“Qalasozlik hújjetleri ekspertizasi” informaciya sisteması ',
+    'electronic_rating_contracting_organizations'=>'Qurılıs -kesip alıp islew shólkemleri elektron reytingi',
+    'building_electronic_platform'=>'Kóp kvartirali úylerdi úles kirgiziw tiykarında qurıw elektron platformasi',
+    'ekspertiza'=>'Ekspertiza shólkemleri reestri',
+
+    // INTERAKTIV XIZMATLAR
+
+    
+    'Bino va inshootning tashqi ko’rinishini o’zgartirishni kelishis'=>"Jay hám qurılıstıń sırtqı kórinisin ózgertiwdi keliwis",
+    'Loyiha-smeta hujjatlarini kelishish'=>"Joybar -smeta hújjetlerin kelisiw",
+    'Obyektni qayta ixtisoslashtirish va rekonstruksiya qilishga ruxsatnoma berish'=>'Obiektti qayta qánigeliklestiriw hám rekonstrukciya etiwge ruxsatnama beriw',
+    'Qurilish-montaj ishlarini amalga oshirishga ruxsatnoma berish'=>'Qurılıs -montaj jumısların ámelge asırıwǵa ruxsatnama beriw',
+    'Arxitektura-rejalashtirish topshirig’ini ishlab chiqish'=>'Arxitektura -joybarlaw tapsırmasın islep shıǵıw ',
+    'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish'=>'Jalǵız tártipte turaq-jay qurıwǵa (rekonstrukciya etiwge) ruxsatnama beriw'
 
 ];

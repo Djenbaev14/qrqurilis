@@ -227,92 +227,62 @@
             <div class="eSystems-gridBox">
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/rating.png')}}" alt="image" />
-                <a href="#">
-                  <p class="desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Enim, at?
-                  </p>
+                <a href="{{route('home')}}">
+                  <p class="desc">{{__('messages.rating')}}</p>
                 </a>
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/chek-list.png')}}" alt="image" />
-                <a href="#">
-                  <p class="desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Enim, at?
-                  </p>
+                <a href="https://reestr.kommunal.uz/">
+                  <p class="desc">{{__('messages.reestr')}}</p>
                 </a>
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/meninguyim.png')}}" alt="image" />
-                <a href="#">
-                  <p class="desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Enim, at?
-                  </p>
+                <a href="https://billing.mjko.uz/">
+                  <p class="desc">{{__('messages.information_system_management')}}</p>
                 </a>
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/cabinet.png')}}" alt="image" />
-                <a href="#">
-                  <p class="desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Enim, at?
-                  </p>
+                <a href="https://users.mjko.uz/uz">
+                  <p class="desc">{{__('messages.consumers')}}</p>
                 </a>
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/hammer.png')}}" alt="image" />
-                <a href="#">
-                  <p class="desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Enim, at?
-                  </p>
+                <a href="https://tender.mc.uz/uz/home">
+                  <p class="desc">{{__('messages.electronic_public_procurement_portal')}}</p>
                 </a>
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/elearning.png')}}" alt="image" />
-                <a href="#">
-                  <p class="desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Enim, at?
-                  </p>
+                <a href="https://license.gov.uz/registry">
+                  <p class="desc">{{__('messages.licensed_organizations')}}</p>
                 </a>
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/file.png')}}" alt="image" />
-                <a href="#">
-                  <p class="desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Enim, at?
-                  </p>
+                <a href="{{route('home')}}">
+                  <p class="desc">{{__('messages.examination_planning_documents')}}</p>
                 </a>
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/review.png')}}" alt="image" />
-                <a href="#">
-                  <p class="desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Enim, at?
-                  </p>
+                <a href="{{route('home')}}">
+                  <p class="desc">{{__('messages.electronic_rating_contracting_organizations')}}</p>
                 </a>
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/file2.png')}}" alt="image" />
                 <a href="#">
-                  <p class="desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Enim, at?
-                  </p>
+                  <p class="desc">{{__('messages.building_electronic_platform')}}</p>
                 </a>
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/apartment.png')}}" alt="image" />
                 <a href="#">
-                  <p class="desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Enim, at?
-                  </p>
+                  <p class="desc">{{__('messages.ekspertiza')}}</p>
                 </a>
               </div>
             </div>
@@ -328,27 +298,39 @@
             <div class="services-grid">
               <div class="service-gridBox">
                 <img src="{{asset('files/services/ic1.png')}}" alt="image" />
-                Bino va inshootning tashqi ko’rinishini o’zgartirishni kelishish
+                <a href="https://my.gov.uz/uz/service/155">
+                  <p class="desc">{{__('messages.Bino va inshootning tashqi ko’rinishini o’zgartirishni kelishis')}}</p>
+                </a>
               </div>
               <div class="service-gridBox">
                 <img src="{{asset('files/services/ic2.png')}}" alt="image" />
-                Loyiha-smeta hujjatlarini kelishish
+                <a href="https://my.gov.uz/uz/service/205">
+                  <p class="desc">{{__('messages.Loyiha-smeta hujjatlarini kelishish')}}</p>
+                </a>
               </div>
               <div class="service-gridBox">
                 <img src="{{asset('files/services/ic3.png')}}" alt="image" />
-                Obyektni qayta ixtisoslashtirish va rekonstruksiya qilishga ruxsatnoma berish
+                <a href="https://my.gov.uz/uz/service/156">
+                  <p class="desc">{{__('messages.Obyektni qayta ixtisoslashtirish va rekonstruksiya qilishga ruxsatnoma berish')}}</p>
+                </a>
               </div>
               <div class="service-gridBox">
                 <img src="{{asset('files/services/ic4.png')}}" alt="image" />
-                Qurilish-montaj ishlarini amalga oshirishga ruxsatnoma berish
+                <a href="https://my.gov.uz/uz/service/262">
+                  <p class="desc">{{__('messages.Qurilish-montaj ishlarini amalga oshirishga ruxsatnoma berish')}}</p>
+                </a>
               </div>
               <div class="service-gridBox">
                 <img src="{{asset('files/services/ic5.png')}}" alt="image" />
-                Arxitektura-rejalashtirish topshirig’ini ishlab chiqish
+                <a href="https://my.gov.uz/uz/service/157">
+                  <p class="desc">{{__('messages.Arxitektura-rejalashtirish topshirig’ini ishlab chiqish')}}</p>
+                </a>
               </div>
               <div class="service-gridBox">
                 <img src="{{asset('files/services/ic6.png')}}" alt="image" />
-                Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish
+                <a href="https://my.gov.uz/uz/service/159">
+                  <p class="desc">{{__('messages.Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish')}}</p>
+                </a>
               </div>
             </div>
           </div>
@@ -1116,5 +1098,13 @@
 
         document.getElementById("chartVals").appendChild(renderVals);
     </script>
-  
+    <script>
+      const accordionBtns = document.querySelectorAll(".accordionBtn");
+      accordionBtns.forEach((button, index) => {
+        button.addEventListener("click", () => {
+          button.classList.toggle("active");
+          document.querySelectorAll(".content")[index].classList.toggle("active");
+        });
+      });
+    </script>
 @endpush

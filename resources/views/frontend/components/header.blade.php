@@ -285,16 +285,18 @@
     </div>
   </div>
 </header>
-<script src="{{asset('frontend/js/jquery.js')}}"></script>
-<script src="{{asset('frontend/js/spec.js')}}"></script>
-<script>
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset >= 10) {
-        headerTop.style.transform = "translateY(-100px)";
-        header.style.marginTop = 0;
-      } else {
-        headerTop.style.transform = "translateY(0)";
-        header.style.marginTop = `${headerTop.getBoundingClientRect().height}px`;
-      }
-    });
-</script>
+@push('js')
+  <script src="{{asset('frontend/js/jquery.js')}}"></script>
+  <script src="{{asset('frontend/js/spec.js')}}"></script>
+  <script>
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset >= 10) {
+          headerTop.style.transform = "translateY(-100px)";
+          header.style.marginTop = 0;
+        } else {
+          headerTop.style.transform = "translateY(0)";
+          header.style.marginTop = `${headerTop.getBoundingClientRect().height}px`;
+        }
+      });
+  </script>
+@endpush

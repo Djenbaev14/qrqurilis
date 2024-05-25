@@ -285,8 +285,6 @@
     </div>
   </div>
 </header>
-<script src="{{asset('frontend/js/spec.js')}}"></script>
-<script src="{{asset('frontend/js/jquery.js')}}"></script>
 <script>
     window.addEventListener("scroll", () => {
       if (window.pageYOffset >= 10) {

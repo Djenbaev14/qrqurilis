@@ -1058,6 +1058,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 @endpush
 @push('js')
+    <script src="{{asset('frontend/js/jquery.js')}}"></script>
+    <script src="{{asset('frontend/js/spec.js')}}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>

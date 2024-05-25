@@ -62,7 +62,7 @@
                           $title='title_'.$local['lang'];
                           $body='body_'.$local['lang'];
                           ?>
-                          <input type="text" value="{{$post->$title}}" name="title_{{$local['lang']}}" id="simpleinput" class="form-control">
+                          <input type="text" value="{{$post->$title}}"  name="title_{{$local['lang']}}" id="simpleinput" class="form-control">
                         </div>
                         <div class="col-md-12 mt-3">
                             <div class="form-group">

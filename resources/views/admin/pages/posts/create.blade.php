@@ -46,6 +46,15 @@
                       @endforeach
                     </ul>
                   
+@if ($errors->any())
+<div class="alert alert-danger">
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
                     <div class="tab-content">
                         @foreach (config('app.available_locales') as $local)
                           <div class="tab-pane  <?=($local['lang']=='ru' ? 'show active' : '')?>" id="item_{{$local['lang']}}">

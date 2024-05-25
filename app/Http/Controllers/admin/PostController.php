@@ -50,9 +50,6 @@ class PostController extends Controller
         $slug_ru = $count_ru ? "{$slug_ru}-{$count_ru}" : $slug_ru;
         $slug_uz = $count_uz ? "{$slug_uz}-{$count_uz}" : $slug_uz;
 
-        DB::beginTransaction();
-        try {
-
             $post = new Post();
             $post->user_id = auth()->user()->id;
             $post->category_id = 1;
@@ -67,12 +64,6 @@ class PostController extends Controller
             $post->slug_uz = $slug_uz;
             $post->image=$filename;
             $post->save();
-            
-            DB::commit();
-        } catch (\Throwable $th) {
-            DB::rollBack();
-            alert()->error('Пост не создано');
-        }
 
         alert()->success('Пост успешно создан');
         

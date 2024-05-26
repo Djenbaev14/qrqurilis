@@ -1,3 +1,5 @@
+$(document).ready(function () {
+  
 window.addEventListener("scroll", () => {
   if (window.pageYOffset >= 10) {
     headerTop.style.transform = "translateY(-100px)";
@@ -93,3 +95,7 @@ jQuery(document).ready(function ($) {
     return false;
   });
 });
+
+});
+
+  

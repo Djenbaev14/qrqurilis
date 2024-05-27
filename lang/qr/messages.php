@@ -69,5 +69,8 @@ return [
     'OzResOliyMajSenat'=>"Ózbekistan Respublikası Oliy Majlisi senatı",
     'OzResPrezRas'=>'Ózbekistan Respublikası Prezidentiniń rásmiy veb-saytı',
     'OzResAshiqMag'=>'Ózbekstan Respublikası ashıq maǵlıwmatlar portalı',
-    'OzResNizamHujjet'=>'Ózbekstan Respublikası nızam hújjetleri maǵlıwmatları milliy bazası'
+    'OzResNizamHujjet'=>'Ózbekstan Respublikası nızam hújjetleri maǵlıwmatları milliy bazası',
+    
+    'VirtualQabul'=>"Qurılıs hám úy-jay kommunal xojalıǵı ministriniń virtual 
+    qabılxonasi"
 ];

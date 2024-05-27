@@ -67,5 +67,9 @@ return [
     'OzResOliyMajSenat'=>"O'zbekiston Respublikasi Oliy Majlisi senati",
     'OzResPrezRas'=>"Oʻzbekiston Respublikasi Prezidentining rasmiy veb-sayti",
     'OzResAshiqMag'=>'Oʻzbekiston Respublikasi Ochiq maʼlumotlar portali',
-    'OzResNizamHujjet'=>"O'zbekiston Respublikasining milliy hujjatlari ma'lumotlar bazasi"
+    'OzResNizamHujjet'=>"O'zbekiston Respublikasining milliy hujjatlari ma'lumotlar bazasi",
+
+
+    'VirtualQabul'=>"Qurilish va uy-joy kommunal xo'jaligi vazirining virtual
+    qabulxonasi"
 ];

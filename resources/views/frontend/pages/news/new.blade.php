@@ -25,16 +25,15 @@
           @endforeach
           @foreach ($menus as $menu)
           <li class="sidebar-menu_item">
-            <a href="/">{{$menu->item->$title}}</a>
+            <a href="{{route('page-2',$menu->item->slug)}}">{{Str::limit($menu->item->$title,45)}}</a>
           </li>
           @endforeach
         </ul>
-        <div href="#" class="sideRow-2 sidebar-mailbox">
-          <a href="#" style="color: #fff">
+        <div class="sideRow-2 sidebar-mailbox">
+          <a href="https://pm.gov.uz/oz#/authorities/2/4836/_info" style="color: #fff">
             <img src="{{asset('files/mailbox.svg')}}" alt="" />
             <p>
-              Qurilish va uy-joy kommunal xo'jaligi vazirining virtual
-              qabulxonasi
+              {{__('messages.VirtualQabul')}}
             </p>
           </a>
         </div>

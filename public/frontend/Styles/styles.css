@@ -312,7 +312,7 @@ section {
 /* Banner */
 
 .banner {
-  background-image: url("../images/banner/main_bg-1536x861.jpg");
+  background-image: url("../../files/banner/main_bg-1536x861.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -573,7 +573,7 @@ section {
 }
 
 .announcement.ad-1 .bg {
-  background-image: url("../images/elonDesk/desk-bg.jpg");
+  background-image: url("../../files/elonDesk/desk-bg.jpg");
   background-size: cover;
   position: absolute;
   top: 0;
@@ -760,7 +760,7 @@ section {
 
 .section-services {
   margin: 40px 0 0 0;
-  background-image: url("../images/services/services.jpg");
+  background-image: url("../../files/services/services.jpg");
   position: sticky;
   background-size: cover;
   background-position: center;
@@ -937,7 +937,7 @@ section {
 /* Section Regional Administration ============================== */
 
 .section-administrations {
-  background: url("../images/mapBgBuilding.png");
+  background: url("../../files/mapBgBuilding.png");
   background-position: 50% 102%;
   background-size: 550px 350px;
   background-repeat: no-repeat;
@@ -1020,7 +1020,7 @@ section {
 /* Document Section ===================================== */
 
 .document-section {
-  background-image: url("../images/documentBg.png");
+  background-image: url("../../files/documentBg.png");
   height: 100%;
   background-size: cover;
   background-position: center center;

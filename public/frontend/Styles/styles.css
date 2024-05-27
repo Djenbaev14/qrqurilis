@@ -801,6 +801,9 @@ section {
   gap: 15px;
   width: 90%;
 }
+.service-gridBox a{
+  color: #fff;
+}
 
 .service-gridBox img {
   width: 64px;

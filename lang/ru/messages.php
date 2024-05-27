@@ -58,6 +58,13 @@ return [
     'Obyektni qayta ixtisoslashtirish va rekonstruksiya qilishga ruxsatnoma berish'=>'Выдача разрешения на перепрофилирование и реконструкцию объекта',
     'Qurilish-montaj ishlarini amalga oshirishga ruxsatnoma berish'=>'Выдача разрешения на проведение строительно-монтажных работ',
     'Arxitektura-rejalashtirish topshirig’ini ishlab chiqish'=>'Разработка архитектурно-планировочного задания',
-    'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish'=>'Выдача разрешения на индивидуальное жилищное строительство (реконструкцию)'
+    'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish'=>'Выдача разрешения на индивидуальное жилищное строительство (реконструкцию)',
+
+    
+    'OzResOliyMaj'=>"Олий Мажлис Республики Узбекистан",
+    'OzResOliyMajSenat'=>"Сенат Олий Мажлиса Республики Узбекистан",
+    'OzResPrezRas'=>'Официальный сайт Президента Республики Узбекистан',
+    'OzResAshiqMag'=>'Портал открытых данных Республики Узбекистан',
+    'OzResNizamHujjet'=>'База данных национальных документов Республики Узбекистан'
 
 ];

@@ -76,6 +76,9 @@
 
               const adminPhone = regionMap.getAttribute("data-admin-phone");
               document.querySelector("#admin-phone").innerHTML = adminPhone;
+              
+              const adminEmail = regionMap.getAttribute("data-admin-email");
+              document.querySelector("#admin-email").innerHTML = adminEmail;
             });
           });
         </script>

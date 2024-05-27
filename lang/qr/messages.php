@@ -27,7 +27,7 @@ return [
     'all_regional'=>'Barlıq aymaqlıq basqarmalar',
     'regional_title'=>'Qaraqalpaqstan Respublikası qurılıs ministrligi',
     'head_department'=>'Basqarma baslıǵı',
-    'phone'=>'telefon',
+    'phone'=>'Telefon',
     'reception_days'=>'Qabıllaw kúnleri',
     'videos'=>'Videokadrlar',
     'all_videos'=>'Barlıq videokadrlar',
@@ -62,6 +62,12 @@ return [
     'Obyektni qayta ixtisoslashtirish va rekonstruksiya qilishga ruxsatnoma berish'=>'Obiektti qayta qánigeliklestiriw hám rekonstrukciya etiwge ruxsatnama beriw',
     'Qurilish-montaj ishlarini amalga oshirishga ruxsatnoma berish'=>'Qurılıs -montaj jumısların ámelge asırıwǵa ruxsatnama beriw',
     'Arxitektura-rejalashtirish topshirig’ini ishlab chiqish'=>'Arxitektura -joybarlaw tapsırmasın islep shıǵıw ',
-    'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish'=>'Jalǵız tártipte turaq-jay qurıwǵa (rekonstrukciya etiwge) ruxsatnama beriw'
+    'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish'=>'Jalǵız tártipte turaq-jay qurıwǵa (rekonstrukciya etiwge) ruxsatnama beriw',
 
+
+    'OzResOliyMaj'=>"Ózbekistan Respublikası Oliy Majlisi",
+    'OzResOliyMajSenat'=>"Ózbekistan Respublikası Oliy Majlisi senatı",
+    'OzResPrezRas'=>'Ózbekistan Respublikası Prezidentiniń rásmiy veb-saytı',
+    'OzResAshiqMag'=>'Ózbekstan Respublikası ashıq maǵlıwmatlar portalı',
+    'OzResNizamHujjet'=>'Ózbekstan Respublikası nızam hújjetleri maǵlıwmatları milliy bazası'
 ];

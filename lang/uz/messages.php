@@ -25,7 +25,7 @@ return [
     'all_regional'=>'Barcha hududiy boshqarmalar ',
     'regional_title'=>"QORAQALPOG'ISTON RESPUBLIKASI QURILISH VAZIRI",
     'head_department'=>"Boshqarma boshlig'i",
-    'phone'=>'telefon',
+    'phone'=>'Telefon',
     'reception_days'=>'Qabul kunlari',
     'videos'=>'VIDEOLAVHALAR',
     'all_videos'=>'Barcha videolar ',
@@ -60,5 +60,12 @@ return [
     'Obyektni qayta ixtisoslashtirish va rekonstruksiya qilishga ruxsatnoma berish'=>'Obyektni qayta ixtisoslashtirish va rekonstruksiya qilishga ruxsatnoma berish',
     'Qurilish-montaj ishlarini amalga oshirishga ruxsatnoma berish'=>'Qurilish-montaj ishlarini amalga oshirishga ruxsatnoma berish',
     'Arxitektura-rejalashtirish topshirig’ini ishlab chiqish'=>'Arxitektura-rejalashtirish topshirig’ini ishlab chiqish',
-    'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish'=>'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish'
+    'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish'=>'Yakka tartibda uy-joy qurishga (rekonstruksiya qilishga) ruxsatnoma berish',
+
+    
+    'OzResOliyMaj'=>" O'zbekiston Respublikasi Oliy Majlisi",
+    'OzResOliyMajSenat'=>"O'zbekiston Respublikasi Oliy Majlisi senati",
+    'OzResPrezRas'=>"Oʻzbekiston Respublikasi Prezidentining rasmiy veb-sayti",
+    'OzResAshiqMag'=>'Oʻzbekiston Respublikasi Ochiq maʼlumotlar portali',
+    'OzResNizamHujjet'=>"O'zbekiston Respublikasining milliy hujjatlari ma'lumotlar bazasi"
 ];

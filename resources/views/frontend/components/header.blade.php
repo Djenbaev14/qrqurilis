@@ -286,6 +286,11 @@
   </div>
 </header>
 @push('js')
-<script src="{{asset('frontend/js/jquery.js')}}"></script>
-  <script src="{{asset('frontend/js/components/header.js')}}"></script>
+  <script>
+    document.getElementById("spec-btn").addEventListener("click", (e) => {
+      e.target.parentNode.classList.toggle("active");
+    });
+  </script>
+  <script src="{{asset('frontend/js/jquery.js')}}"></script>
+  <script src="{{asset('frontend/js/header.js')}}"></script>
 @endpush

@@ -1,7 +1,7 @@
-const headerTop = document.querySelector(".header-top");
-const header = document.querySelector(".header");
-const mainElement = document.querySelector(".main");
-const toTopBtn = document.querySelector(".toTop-btn");
+// const headerTop = document.querySelector(".header-top");
+// const header = document.querySelector(".header");
+// const mainElement = document.querySelector(".main");
+// const toTopBtn = document.querySelector(".toTop-btn");
 
 // function handleScroll(){
 //   if (window.pageYOffset >= 100) {

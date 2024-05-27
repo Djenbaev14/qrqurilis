@@ -1,19 +1,4 @@
-$(document).ready(function () {
-  
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset >= 10) {
-    headerTop.style.transform = "translateY(-100px)";
-    header.style.marginTop = 0;
-  } else {
-    headerTop.style.transform = "translateY(0)";
-    header.style.marginTop = `${headerTop.getBoundingClientRect().height}px`;
-  }
-});
 
-
-document.getElementById("spec-btn").addEventListener("click", (e) => {
-  e.target.parentNode.classList.toggle("active");
-});
 
 jQuery(document).ready(function ($) {
   $(".SpecialWindow").click(function () {
@@ -96,6 +81,5 @@ jQuery(document).ready(function ($) {
   });
 });
 
-});
 
   

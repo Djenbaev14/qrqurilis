@@ -1063,36 +1063,6 @@
         </div>
       </section>
 
-      <div class="message-box ">
-        <button class="close-msg">&times;</button>
-        <p class="box-title">
-          <span><i class="fa-regular fa-envelope"></i></span>
-          Отправьте нам сообщение
-        </p>
-  
-        <div class="chat">
-          <div class="messages">
-            <p class="incoming-msg">
-              Assalamu aleykum.
-                Sorawlarıńız barma? Juwap beriwden quwanıshlı bolamız!
-            </p>
-          </div>
-          <div class="input-box">
-            <textarea
-              name="message-input"
-              id="message-input"
-              placeholder="Введите сообщение"
-            ></textarea>
-            <button class="msg-sendBtn">
-              <i class="fa-solid fa-arrow-up"></i>
-            </button>
-          </div>
-          <div class="tools-bar">
-            <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
-            <button><i class="fa-regular fa-face-smile"></i></button>
-          </div>
-        </div>
-      </div>
       <div class="search-modal modal">
         <div class="modal-inner">
           <input type="search" required autocomplete="off" />
@@ -1192,36 +1162,7 @@
         });
     </script>
 
-    <script>
-        const msgTextarea = document.querySelector("#message-input");
-        msgTextarea.addEventListener("keyup", (e) => {
-          if (e.target.value.length > 0) {
-            document.querySelector(".msg-sendBtn").classList.add("active");
-          } else {
-            document.querySelector(".msg-sendBtn").classList.remove("active");
-          }
-        });
-
-        const msgBox = document.querySelector(".message-box");
-        const closeMsgBtn = document.querySelector(".close-msg");
-
-        msgBox.addEventListener("click", () => {
-          msgBox.classList.add("active");
-        });
-
-        closeMsgBtn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          msgBox.classList.remove("active");
-        });
-
-        // Escape event
-
-        window.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") {
-            modal.classList.remove("active");
-          }
-        });
-    </script>
+    
     <script>
       const searchBtn = document.querySelector(".search");
       const modal = document.querySelector(".modal");
@@ -1240,4 +1181,11 @@
         });
       });
     </script>
+    
+  <script>
+  window.replainSettings = { id: '0be94821-35a0-4277-86a7-fd025840a47c' };
+  (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+  var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+  })('https://widget.replain.cc/dist/client.js');
+  </script>
 @endpush

@@ -844,9 +844,9 @@
                   original="#e0e0e0"
                   id="jqvmap1_city_nukus"
                   class="jqvmap-region active"
-                  data-admin="Utemurat Panayev"
-                  data-admin-phone="+998 (61) 640-25-52"
-                  data-admin-email="+998(61) 312-16-41"
+                  data-admin="JEKSEMBIEV JETKERBAY XOJABAEVICH"
+                  data-admin-phone="+998 (99) 717-83-38"
+                  data-admin-email="nukus-arxuyjoy@umail.uz"
                   data-admin-reception-days="Dúyshembi sársenbi juma kúnleri 10:00 den 13:00 ge shekem"
                 ></path>
                 <path

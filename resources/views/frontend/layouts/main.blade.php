@@ -79,6 +79,9 @@
               
               const adminEmail = regionMap.getAttribute("data-admin-email");
               document.querySelector("#admin-email").innerHTML = adminEmail;
+              // admin-reception-days
+              const adminReceptionDays = regionMap.getAttribute("data-admin-reception-days");
+              document.querySelector("#admin-reception-days").innerHTML = adminReceptionDays;
             });
           });
         </script>

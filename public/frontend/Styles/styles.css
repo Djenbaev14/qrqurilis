@@ -141,6 +141,14 @@ section {
   font-size: 22px;
 }
 
+.top-tools .search {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .languages {
   display: flex;
   align-items: center;
@@ -183,7 +191,7 @@ section {
 
 .header-inner {
   display: flex;
-  /* gap: 20px; */
+  gap: 40px;
 }
 
 .header-menu {
@@ -202,7 +210,7 @@ section {
   color: #555;
   transition: color 0.1s;
   padding: 14px 10px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -304,7 +312,7 @@ section {
 /* Banner */
 
 .banner {
-  background-image: url("../../files/banner/main_bg-1536x861.jpg");
+  background-image: url("../images/banner/main_bg-1536x861.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -565,7 +573,7 @@ section {
 }
 
 .announcement.ad-1 .bg {
-  background-image: url("../../files/elonDesk/desk-bg.jpg");
+  background-image: url("../images/elonDesk/desk-bg.jpg");
   background-size: cover;
   position: absolute;
   top: 0;
@@ -752,7 +760,7 @@ section {
 
 .section-services {
   margin: 40px 0 0 0;
-  background-image: url("../../files/services/services.jpg");
+  background-image: url("../images/services/services.jpg");
   position: sticky;
   background-size: cover;
   background-position: center;
@@ -799,9 +807,6 @@ section {
   height: 64px;
 }
 
-.service-gridBox a {
-  color: #fff;
-}
 .section-services .section-title {
   z-index: 2;
   font-size: 35px;
@@ -932,7 +937,7 @@ section {
 /* Section Regional Administration ============================== */
 
 .section-administrations {
-  background: url("../../files/mapBgBuilding.png");
+  background: url("../images/mapBgBuilding.png");
   background-position: 50% 102%;
   background-size: 550px 350px;
   background-repeat: no-repeat;
@@ -1015,7 +1020,7 @@ section {
 /* Document Section ===================================== */
 
 .document-section {
-  background-image: url("../../files/documentBg.png");
+  background-image: url("../images/documentBg.png");
   height: 100%;
   background-size: cover;
   background-position: center center;
@@ -1363,7 +1368,7 @@ section {
   }
 
   .section-news .newsCards-box {
-    /* display: flex !important; */
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     width: 90%;
@@ -1581,4 +1586,195 @@ section {
   border-bottom: 1px solid silver;
   font-size: 17px;
   font-weight: 400;
+}
+
+/* Message box */
+
+.message-box {
+  position: fixed;
+  bottom: 0;
+  border-radius: 7px 24px 0 0;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  max-width: 350px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.message-box .close-msg {
+  display: none;
+}
+
+.message-box.active .close-msg {
+  display: flex;
+  cursor: pointer;
+}
+
+.message-box.active .chat {
+  max-height: 400px;
+}
+
+.message-box .box-title {
+  color: #fff;
+  background-color: var(--main-blue-color);
+  padding: 7px 12px;
+  border-radius: 7px 24px 0 0;
+}
+
+.message-box.active .box-title {
+  padding: 20px;
+}
+
+.message-box .chat {
+  background-color: #fff;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  max-height: 0px;
+
+  transition: max-height 0.2s;
+}
+
+.message-box .chat .messages {
+  height: 270px;
+  padding: 10px 20px 0 20px;
+
+  display: flex;
+  align-items: end;
+  margin-bottom: 10px;
+}
+
+.message-box .chat .input-box {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #aaa;
+  padding-right: 10px;
+}
+
+.message-box .input-box .msg-sendBtn {
+  background-color: #eee;
+  color: #aaa;
+  border: none;
+  padding: 8px 10px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.message-box .input-box textarea {
+  padding: 18px 58px 0 16px;
+  width: 100%;
+  border: none;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.message-box .box-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.message-box .chat .tools-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px 15px 16px;
+}
+
+.message-box .tools-bar button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #999;
+}
+
+.message-box .msg-sendBtn.active {
+  background-color: #00bd39;
+  color: #fff;
+}
+
+.message-box .chat .incoming-msg {
+  background-color: #ddd;
+  padding: 12px;
+  font-size: 13px;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.close-msg {
+  position: absolute;
+  bottom: 90%;
+  left: -40px;
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #333;
+  font-size: 16px;
+}
+
+/* Modal Seacrh modal */
+
+.search-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 999;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 0.1s, visibility 0.1s;
+}
+
+.search-modal.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.search-modal .modal-inner {
+  padding: 30px;
+  border-radius: 6px;
+  background-color: #fff;
+
+  margin-top: 40px;
+  width: 500px;
+  display: flex;
+
+  transform: translateY(-150%);
+
+  transition: transform 0.2s;
+}
+
+.search-modal.active .modal-inner {
+  transform: translateY(0);
+}
+
+.search-modal input {
+  padding: 7px 12px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #777;
+}
+
+.search-modal button {
+  background-color: var(--main-blue-color);
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 5px;
 }

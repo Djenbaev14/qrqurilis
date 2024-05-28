@@ -14,7 +14,7 @@ class HomeController extends Controller
 {
     
     public function home(){
-            $menus=Menu::orderBy('created_at','desc')->get();
+        $menus=Menu::orderBy('created_at','desc')->get();
         $items=Item::all();
         $categories=Category::orderBy('created_at','desc')->get();
         $posts=Post::orderBy('created_at','desc')->limit(8)->get();

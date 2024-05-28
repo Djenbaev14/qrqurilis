@@ -21,6 +21,6 @@ class Menu extends Model
     }
 
     public function menu_item():HasMany{
-        return $this->HasMany(Menu_item::class);
+        return $this->HasMany(Menu_item::class)->orderBy('created_at','desc');
     }
 }

@@ -553,29 +553,39 @@
               <div class="section-top">
                 <h1 class="title">{{Str::upper(__('messages.cammonal_tariffs'))}}</h1>
               </div>
-              <div class="top-menu">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>
-                        <select>
-                          <option value="tashkent">Toshkent</option>
-                          <option value="tashkent">Toshkent</option>
-                          <option value="tashkent">Toshkent</option>
-                          <option value="tashkent">Toshkent</option>
-                          <option value="tashkent">Toshkent</option>
-                          <option value="tashkent">Toshkent</option>
-                          <option value="tashkent">Toshkent</option>
-                          <option value="tashkent">Toshkent</option>
-                        </select>
-                      </th>
-                      <th>{{__('messages.counter')}}</th>
-                      <th>{{__('messages.without_counter')}}</th>
-                    </tr>
-                  </thead>
-                  <tbody></tbody>
-                </table>
-              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      <select id="selectRegion">
+                        <option value="qr_res">
+                          Qoraqalpog'iston Respublikasi
+                        </option>
+                        <option value="nukus_city">Nukus shaxri</option>
+                        <option value="amudaryo">Amudaryo tumani</option>
+                        <option value="beruniy">Beruniy tumani</option>
+                        <option value="bozatov">Bozatov tumani</option>
+                        <option value="kegeyli">Kegeyli tumani</option>
+                        <option value="qonlikol">Qonlikol tumani</option>
+                        <option value="qoraozak">Qoraozak tumani</option>
+                        <option value="qongirot">Qong'irot tumani</option>
+                        <option value="moynoq">Moynoq tumani</option>
+                        <option value="nukus">Nukus tumani</option>
+                        <option value="taxiatash">Taxiatash tumani</option>
+                        <option value="taxtakopir">Taxtakopir tumani</option>
+                        <option value="tortkol">Tortkol tumani</option>
+                        <option value="xujayli">Xujayli tumani</option>
+                        <option value="chimbay">Chimbay tumani</option>
+                        <option value="shumanay">Shumanay tumani</option>
+                        <option value="ellikqala">Ellikqala tumani</option>
+                      </select>
+                    </th>
+                    <th>Hisoblagich</th>
+                    <th>Hisoblagichsiz</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -1091,60 +1101,234 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        // Statistics
-        const doughnut = document.getElementById("myChart");
-        const renderVals = document.createElement("div");
+        
+// Statistics
+const doughnut = document.getElementById("myChart");
+const renderVals = document.createElement("div");
 
-        const vals = [
-          { title: "Ko'p qavatli uylar", value: 40789 },
-          { title: "Boshqaruv kompaniyalar soni", value: 812 },
-          { title: "Shirkatlar soni", value: 117 },
-        ];
-        const backgroundColors = [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-        ];
+const selectRegionEl = document.getElementById("selectRegion");
 
-        new Chart(doughnut, {
-          type: "doughnut",
-          data: {
-            labels: vals.map((item) => item.title),
-            datasets: [
-              {
-                label: ["# value"],
-                data: vals.map((item) => item.value),
-                borderWidth: 0,
-                backgroundColor: backgroundColors,
-              },
-            ],
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true,
-              },
-            },
-          },
-        });
+// Regions & Vals
+const regionsAndVals = {
+  qr_res: {
+    name: "Qoraqalpoq",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 1576 },
+      { title: "Boshqaruv kompaniyalar soni", value: 31 },
+      { title: "Shirkatlar soni", value: 5 },
+    ],
+  },
+  nukus_city: {
+    name: "Nukus shaxri",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 663 },
+      { title: "Boshqaruv kompaniyalar soni", value: 10 },
+      { title: "Shirkatlar soni", value: 1 },
+    ],
+  },
+  amudaryo: {
+    name: "Amudaryo tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 60 },
+      { title: "Boshqaruv kompaniyalar soni", value: 3 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  beruniy: {
+    name: "Beruniy tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 85 },
+      { title: "Boshqaruv kompaniyalar soni", value: 1 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  bozatov: {
+    name: "Bozatov tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 7 },
+      { title: "Boshqaruv kompaniyalar soni", value: 1 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  kegeyli: {
+    name: "Kegeyli tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 24 },
+      { title: "Boshqaruv kompaniyalar soni", value: 1 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  qonlikol: {
+    name: "Qonlikol tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 25 },
+      { title: "Boshqaruv kompaniyalar soni", value: 1 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  qoraozak: {
+    name: "Qoraozak tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 17 },
+      { title: "Boshqaruv kompaniyalar soni", value: 1 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  qongirot: {
+    name: "Qong'irot tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 198 },
+      { title: "Boshqaruv kompaniyalar soni", value: 4 },
+      { title: "Shirkatlar soni", value: 2 },
+    ],
+  },
+  moynoq: {
+    name: "Moynoq tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 37 },
+      { title: "Boshqaruv kompaniyalar soni", value: 1 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  nukus: {
+    name: "Nukus tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 29 },
+      { title: "Boshqaruv kompaniyalar soni", value: 0 },
+      { title: "Shirkatlar soni", value: 1 },
+    ],
+  },
+  taxiatash: {
+    name: "Taxiatash tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 105 },
+      { title: "Boshqaruv kompaniyalar soni", value: 2 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  taxtakopir: {
+    name: "Taxtakopir tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 25 },
+      { title: "Boshqaruv kompaniyalar soni", value: 1 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  tortkol: {
+    name: "Tortkol tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 72 },
+      { title: "Boshqaruv kompaniyalar soni", value: 2 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  xujayli: {
+    name: "Xujayli tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 107 },
+      { title: "Boshqaruv kompaniyalar soni", value: 1 },
+      { title: "Shirkatlar soni", value: 1 },
+    ],
+  },
+  chimbay: {
+    name: "Chimbay tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 35 },
+      { title: "Boshqaruv kompaniyalar soni", value: 1 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  shumanay: {
+    name: "Shumanay tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 27 },
+      { title: "Boshqaruv kompaniyalar soni", value: 1 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+  ellikqala: {
+    name: "Ellikqala tumani",
+    vals: [
+      { title: "Ko'p qavatli uylar", value: 60 },
+      { title: "Boshqaruv kompaniyalar soni", value: 1 },
+      { title: "Shirkatlar soni", value: 0 },
+    ],
+  },
+};
 
-        renderVals.innerHTML = `
-          <p>
-            <span>${vals[0].title}</span>
-            <span style="color: ${backgroundColors[0]}">${vals[0].value}</span>
-          </p>
-          <p>
-            <span>${vals[1].title}</span>
-            <span style="color: ${backgroundColors[1]}">${vals[1].value}</span>
-          </p>
-          <p>
-            <span>${vals[2].title}</span>
-            <span style="color: ${backgroundColors[2]}">${vals[2].value}</span>
-          </p>
-        `;
-        renderVals.classList.add("renderVals");
+let vals = regionsAndVals.qr_res.vals;
 
-        document.getElementById("chartVals").appendChild(renderVals);
+const backgroundColors = [
+  "rgba(255, 99, 132, 1)",
+  "rgba(54, 162, 235, 1)",
+  "rgba(255, 206, 86, 1)",
+];
+
+const myChart = new Chart(document.getElementById("myChart"), {
+  type: "doughnut",
+  data: {
+    labels: vals.map((item) => item.title),
+    datasets: [
+      {
+        label: ["# value"],
+        data: vals.map((item) => item.value),
+        borderWidth: 0,
+        backgroundColor: backgroundColors,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
+});
+
+renderVals.innerHTML = `
+  <p>
+    <span>${vals[0].title}</span>
+    <span style="color: ${backgroundColors[0]}">${vals[0].value}</span>
+  </p>
+  <p>
+    <span>${vals[1].title}</span>
+    <span style="color: ${backgroundColors[1]}">${vals[1].value}</span>
+  </p>
+  <p>
+    <span>${vals[2].title}</span>
+    <span style="color: ${backgroundColors[2]}">${vals[2].value}</span>
+  </p>
+`;
+renderVals.classList.add("renderVals");
+
+document.getElementById("chartVals").appendChild(renderVals);
+
+// Change Event
+selectRegionEl.addEventListener("change", (e) => {
+  myChart.data.datasets[0].data = regionsAndVals[e.target.value].vals;
+  vals = regionsAndVals[e.target.value].vals;
+  myChart.update();
+
+  renderVals.innerHTML = `
+  <p>
+    <span>${vals[0].title}</span>
+    <span style="color: ${backgroundColors[0]}">${vals[0].value}</span>
+  </p>
+  <p>
+    <span>${vals[1].title}</span>
+    <span style="color: ${backgroundColors[1]}">${vals[1].value}</span>
+  </p>
+  <p>
+    <span>${vals[2].title}</span>
+    <span style="color: ${backgroundColors[2]}">${vals[2].value}</span>
+  </p>
+`;
+  renderVals.classList.add("renderVals");
+
+  document.getElementById("chartVals").appendChild(renderVals);
+});
+
     </script>
     <script>
       const accordionBtns = document.querySelectorAll(".accordionBtn");

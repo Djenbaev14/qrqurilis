@@ -1162,12 +1162,12 @@ section {
   background-color: #fff;
   display: flex;
   align-items: center;
+  width: 325px;
   gap: 15px;
   padding: 8px 10px;
   border-radius: 12px;
   font-size: 15px;
 }
-
 .resourceSwiper .swiper-slide img {
   width: 64px;
   height: 64px;
@@ -1232,8 +1232,8 @@ section {
   z-index: 5;
 
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 100px;
 }
 
 .toTop-btn.active {

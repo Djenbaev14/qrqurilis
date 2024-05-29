@@ -32,3 +32,22 @@
     </div>
   </div>
 </footer>
+<button class="toTop-btn"><i class="fa-solid fa-chevron-up"></i></button>
+
+@push('js')
+    
+<script>
+  const toTopBtn = document.querySelector(".toTop-btn");
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 200) {
+      toTopBtn.classList.add("active");
+    } else {
+      toTopBtn.classList.remove("active");
+    }
+  });
+
+  toTopBtn.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+  });
+</script>
+@endpush

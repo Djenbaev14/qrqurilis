@@ -19,7 +19,7 @@
           <ul class="sideRow-1 sidebar-menu">
             @foreach ($menu->menu_item as $m_item)
                 <li class="sidebar-menu_item">
-                  <a href="{{route('page-1',[$menu->item->slug,$m_item->item->slug])}}" class="<?=($item->id == $m_item->item->id) ? 'active' :'';?>">{{Str::limit($m_item->item->$title,45)}}</a>
+                  <a href="{{route('page-1',[$menu->item->slug,$m_item->item->slug])}}" class="<?=($item->id == $m_item->item->id) ? 'active' :'';?>">{{Str::limit($m_item->item->$title,35)}}</a>
                 </li>
             @endforeach
           </ul>

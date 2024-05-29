@@ -25,7 +25,7 @@
           @endforeach
           @foreach ($menus as $menu)
           <li class="sidebar-menu_item">
-            <a href="{{route('page-2',$menu->item->slug)}}">{{Str::limit($menu->item->$title,45)}}</a>
+            <a href="{{route('page-2',$menu->item->slug)}}">{{Str::limit($menu->item->$title,35)}}</a>
           </li>
           @endforeach
         </ul>

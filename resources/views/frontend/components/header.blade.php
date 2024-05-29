@@ -247,9 +247,14 @@
     <div class="header-inner">
       <a href="{{route('home')}}" class="logo-box">
         <img src="{{asset('files/logo.png')}}" alt="logo" />
-        <h1>
-          {{__('messages.logo_title')}}
+        <h1 style="text-align: center">
+          {{__('messages.logo_title')}} <br> {{__('messages.logo_title2')}} 
         </h1>
+        {{-- <h1 style="text-align: center">
+          Qoraqalpog'iston Respublikasi Qurilish va uy-joy kommunal
+          xo'jaligi<br />
+          vazirligi
+        </h1> --}}
       </a>
       <ul class="header-menu">
         @foreach ($menus as $menu)

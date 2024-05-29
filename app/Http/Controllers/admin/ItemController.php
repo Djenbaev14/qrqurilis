@@ -27,6 +27,7 @@ class ItemController extends Controller
             'title_ru'=>'required',
             'title_qr'=>'required',
             'title_uz'=>'required',
+            'slug'=>'required',
         ]);
 
         $item = new Item();

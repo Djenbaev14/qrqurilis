@@ -967,12 +967,25 @@
                 </button>
               </div>
               <div class="photos-box">
+                @foreach ($photos as $photo)
                 <div class="photo-box">
                   <div class="inner">
+                    <img src="{{asset('uploads/'.$photo->image)}}" alt="image" />
+                    <a href="{{route('new-new',$photo->$slug)}}" class="playButton">
+                        <i class="fa-regular fa-images"></i>
+                    </a>
+                  </div>
+                  <p class="desc">
+                    {{$photo->$title}}
+                  </p>
+                </div>
+                @endforeach
+                {{-- <div class="photo-box">
+                  <div class="inner">
                     <img src="{{asset('files/elonDesk/desk-bg.jpg')}}" alt="image" />
-                    <button class="playButton">
-                      <i class="fa-regular fa-images"></i>
-                    </button>
+                    <a href="mc.uz" class="playButton">
+                        <i class="fa-regular fa-images"></i>
+                    </a>
                   </div>
                   <p class="desc">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -1013,7 +1026,7 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Nulla, explicabo.
                   </p>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div>
@@ -1030,26 +1043,26 @@
 
           <div class="swiper resourceSwiper">
             <div class="swiper-wrapper">
-              <a class="swiper-slide" href="https://parliament.gov.uz/" style="color: #000">
+              <div class="swiper-slide" href="https://parliament.gov.uz/" style="color: #000">
                 <img src="{{asset('files/swipper/qp.png')}}" alt="gerb image" />
 				        {{__('messages.OzResOliyMaj')}}			
-              </a>
-              <a class="swiper-slide" href="https://senat.uz/" style="color: #000">
+              </div>
+              <div class="swiper-slide" href="https://senat.uz/" style="color: #000">
                 <img src="{{asset('files/swipper/uz-gerb-flag.png')}}" alt="gerb image" />
 				        {{__('messages.OzResOliyMajSenat')}}			
-              </a>
-              <a class="swiper-slide" href="https://president.uz/uz" style="color: #000">
+              </div>
+              <div class="swiper-slide" href="https://president.uz/uz" style="color: #000">
                 <img src="{{asset('files/swipper/president.png')}}" alt="gerb image" />
 				        {{__('messages.OzResPrezRas')}}			
-              </a>
-              <a class="swiper-slide" href="http://data.gov.uz/uz" style="color: #000">
+              </div>
+              <div class="swiper-slide" href="http://data.gov.uz/uz" style="color: #000">
                   <img src="{{asset('files/swipper/open-source-gov.png')}}" alt="gerb image" />
                   {{__('messages.OzResAshiqMag')}}	
-              </a>
-              <a class="swiper-slide" href="https://www.lex.uz/uz/" style="color: #000">
+              </div>
+              <div class="swiper-slide" href="https://www.lex.uz/uz/" style="color: #000">
                 <img src="{{asset('files/swipper/lexuz.png')}}" alt="gerb image" />
 				        {{__('messages.OzResNizamHujjet')}}					
-              </a>
+              </div>
             </div>
             <div class="swiper-buttons">
               <div class="swiper-button-next">

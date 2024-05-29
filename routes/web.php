@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\AppealController;
 use App\Http\Controllers\admin\CategoryController;
+use App\Http\Controllers\admin\FileController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\admin\HomeController;
 use App\Http\Controllers\admin\ItemController;
@@ -96,6 +97,11 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth'], function () {
         Route::get('/', 'index')->name('dashboard.appeal.index');
 
         // Route::get('create', 'create')->name('dashboard.post.create'
+    });
+    Route::controller(FileController::class)->prefix('file')->group(function () {
+        // index
+        Route::get('/', 'index')->name('dashboard.file.index');
+        Route::post('store','store')->name('dashboard.file.store');
     });
 
 });

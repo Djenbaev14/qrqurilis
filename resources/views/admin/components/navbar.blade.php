@@ -113,7 +113,14 @@
                                 <span> Мүрәжатлар </span>
                             </a>
                         </li>
+                        <li class="side-nav-item">
+                            <a href="{{route('dashboard.file.index')}}" class="side-nav-link">
+                                <i class="ri-file-cloud-fill"></i>
+                                <span> Файл Жуклеу </span>
+                            </a>
+                        </li>
 
+                        
 
                   </ul>
                   <!--- End Sidemenu -->

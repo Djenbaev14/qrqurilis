@@ -1157,17 +1157,19 @@ section {
   top: 10px;
   right: 60px;
 }
-
+.resourceSwiper .swiper-wrapper{
+  width: 340px;
+}
 .resourceSwiper .swiper-slide {
   background-color: #fff;
   display: flex;
   align-items: center;
-  width: 325px;
   gap: 15px;
   padding: 8px 10px;
   border-radius: 12px;
   font-size: 15px;
 }
+
 .resourceSwiper .swiper-slide img {
   width: 64px;
   height: 64px;

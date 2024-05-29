@@ -10,6 +10,7 @@ return [
     'logo_title'=>"QORAQALPOG'ISTON RESPUBLIKASI 
     QURILISH VA UY-JOY
     KOMMUNAL XO'JALIGI VAZIRLIGI",
+    'logo_title2'=>"VAZIRLIGI",
     'qq_ministry'=>'Qoraqalpogʻiston Respublikasi Qurilish va uy-joy kommunal xoʻjaligi vazirligi',
     'news'=>"SO'NGGI YANGILIKLAR",
     'all_news'=>'Barcha yangiliklar',

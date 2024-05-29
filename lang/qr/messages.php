@@ -10,6 +10,7 @@ return [
     'logo_title'=>"Qaraqalpaqstan Respublikası
     Qurılıs hám úy-jay
     kommunal xojalıǵı ministrligi",
+    'logo_title2'=>"ministrligi",
     'qq_ministry'=>'Qaraqalpaqstan Respublikası 
     Qurılıs hám úy-jay
     kommunal xojalıǵı ministrligi',

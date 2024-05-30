@@ -73,5 +73,14 @@ return [
     'OzResNizamHujjet'=>'Ózbekstan Respublikası nızam hújjetleri maǵlıwmatları milliy bazası',
     
     'VirtualQabul'=>"Qurılıs hám úy-jay kommunal xojalıǵı ministriniń virtual 
-    qabılxonasi"
+    qabılxonasi",
+    
+    // appeals
+    'name'=>'Atı',
+    'surname'=>'Familiya',
+    'e-address'=>'Elektron pochta adresi',
+    'file-placement'=>'Fayl jaylastırıw',
+    'appeal'=>'Múrájat',
+    'attribution-code'=>'Tastıyıqlaw kodı ',
+    'send-request'=>'Múrájat jiberiw'
 ];

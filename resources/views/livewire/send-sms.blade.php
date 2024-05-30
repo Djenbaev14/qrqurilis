@@ -3,27 +3,27 @@
     @csrf
     <!-- Name -->
     <div class="name-inputBox">
-      <label for="name">Ism *</label>
+      <label for="name">{{__('messages.name')}} *</label>
       <input type="text" value="{{old('firstname')}}" name="firstname" id="name" <?=($errors->has('firstname')) ? 'style="border: 1px solid rgb(245, 70, 70)"' : ''?>/>
     </div>
     <!-- Surname -->
     <div class="surname-inputBox">
-      <label for="surname">Familiya *</label>
+      <label for="surname">{{__('messages.surname')}} *</label>
       <input type="text" value="{{old('lastname')}}" <?=($errors->has('lastname')) ? 'style="border: 1px solid rgb(245, 70, 70)"' : ''?> name="lastname" id="surname" />
     </div>
     <!-- Email -->
     <div class="email-inputBox">
-      <label for="email">Elektron pochta manzili *</label>
+      <label for="email">{{__('messages.e-address')}} *</label>
       <input type="email" value="{{old('email')}}" <?=($errors->has('email')) ? 'style="border: 1px solid rgb(245, 70, 70)"' : ''?> name="email" id="email" />
     </div>
     <!-- Address -->
     <div class="address-inputBox">
-      <label for="address">Manzil *</label>
+      <label for="address">{{__('messages.address')}} *</label>
       <textarea name="address" value="{{old('address')}}" <?=($errors->has('address')) ? 'style="border: 1px solid rgb(245, 70, 70)"' : ''?> id="address"></textarea>
     </div>
     <!-- Message -->
     <div class="message-inputBox">
-      <label for="message">Murojaat *</label>
+      <label for="message">{{__('messages.appeal')}} *</label>
       <textarea name="message" value="{{old('message')}}" <?=($errors->has('message')) ? 'style="border: 1px solid rgb(245, 70, 70)"' : ''?> id="message"></textarea>
     </div>
 
@@ -39,7 +39,7 @@
 
       <a id="file-upload_btn">
         <i class="fa-solid fa-cloud-arrow-up"></i>
-        <label for="file">Fayl joylashtirish</label>
+        <label for="file">{{__('messages.file-placement')}}</label>
         <input
           type="file"
           name="file"
@@ -51,7 +51,7 @@
     <!-- Phone Varification -->
     <div class="phone-varification">
       <div class="phone-inputBox">
-        <label for="phone">Telefon *</label>
+        <label for="phone">{{__('messages.phone')}} *</label>
         <input type="tel" value="{{old('phone]')}}" <?=($errors->has('phone')) ? 'style="border: 1px solid rgb(245, 70, 70)"' : ''?> name="phone" wire:model.lazy="phone" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" 
         maxlength="9" id="phone" onfocusout="myFunction(this)" placeholder="+998 xx-xxx-xx-xx" autocomplete="off" 
         >
@@ -62,7 +62,7 @@
       </div>
       
       <div class="varification-code_inputBox">
-        <label for="verifyCode">Tasdiqlash kodi *</label>
+        <label for="verifyCode">{{__('messages.attribution-code')}} *</label>
         <input type="number" name="verifyCode" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" id="verifyCode" />
       </div>
       <p class="timer" id="countdownDisplay">01:00</p>
@@ -72,7 +72,7 @@
     </div>
     <!-- Submit Button -->
     <button class="submit-btn">
-      <i class="fa-regular fa-paper-plane" style="cursor: pointer"></i> Murojaatni yuborish
+      <i class="fa-regular fa-paper-plane" style="cursor: pointer"></i> {{__('messages.send-request')}}
     </button>
   </form>
 </div>

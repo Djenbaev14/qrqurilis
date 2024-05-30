@@ -72,5 +72,14 @@ return [
 
 
     'VirtualQabul'=>"Qurilish va uy-joy kommunal xo'jaligi vazirining virtual
-    qabulxonasi"
+    qabulxonasi",
+
+    // appeals
+    'name'=>'Ism',
+    'surname'=>'Familiya',
+    'e-address'=>'Elektron pochta manzili',
+    'appeal'=>'Murojaat',
+    'file-placement'=>' Fayl joylashtirish',
+    'attribution-code'=>'Tasdiqlash kodi',
+    'send-request'=>'Murojaatni yuborish'
 ];

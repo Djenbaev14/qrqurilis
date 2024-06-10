@@ -24,7 +24,7 @@
         <ul class="links">
           @foreach ($menus as $menu)
             @if (count($menu->menu_item) > 0)
-              <a href="/{{$menu->menu_item[0]->item->slug}}"><span>∷</span> <span>{{$menu->menu_item[0]->item->$title}}</span></a>
+              <a href="/{{$menu->item->slug}}/{{$menu->menu_item[0]->item->slug}}"><span>∷</span> <span>{{$menu->menu_item[0]->item->$title}}</span></a>
             @endif
           @endforeach
         </ul>

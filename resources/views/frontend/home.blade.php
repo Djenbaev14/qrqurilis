@@ -598,7 +598,7 @@
           <div class="section-top">
             <h1 class="title">{{Str::upper(__('messages.regional_adminstrations'))}}</h1>
             <button>
-              <a href="#"
+              <a href="/ministry/departments"
                 >{{__('messages.all_regional')}}
                 <i class="fa-solid fa-arrow-right"></i
               ></a>

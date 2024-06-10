@@ -25,6 +25,14 @@
   border-radius: 6px;
 }
 
+.body-row .col-3 {
+  flex: 75%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 32px 16px;
+  border-radius: 6px;
+}
+
 
 .baner {
   background-image: url("../../files/banner/about-banner.jpg");

@@ -14,7 +14,7 @@
       </div>
       <div class="body-row">
         <!-- Main Content -->
-        <div class="col-2 content">
+        <div class="col-3 content">
           <div class="row-1 requisites">
             {!! $menu->item->$body !!}
           </div>

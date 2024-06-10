@@ -1050,7 +1050,7 @@
           <div class="section-top">
             <h1 class="title">{{__('messages.userful_resources')}}</h1>
           </div>
-
+          
           <div class="swiper resourceSwiper">
             <div class="swiper-wrapper">
               <a class="swiper-slide" href="https://parliament.gov.uz/" style="color: #000">
@@ -1342,22 +1342,42 @@ selectRegionEl.addEventListener("change", (e) => {
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".resourceSwiper", {
-          slidesPerView: 4,
-          spaceBetween: 20,
-          loop: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+      
+      var swiper = new Swiper(".resourceSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 3000,
+        },
+        breakpoints: {
+          220: {
+            slidesPerView: 1,
+            spaceBetween: 0,
           },
-          pagination: {
-            el: ".swiper-pagination",
+      
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 10,
           },
-          autoplay: {
-            delay: 3000,
+      
+          800: {
+            slidesPerView: 3,
           },
-        });
-    </script>
+      
+          1200: {
+            slidesPerView: 4,
+          },
+        },
+      });
+          </script>
 
     
     <script>

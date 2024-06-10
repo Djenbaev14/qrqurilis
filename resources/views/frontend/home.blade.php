@@ -227,7 +227,7 @@
             <div class="eSystems-gridBox">
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/rating.png')}}" alt="image" />
-                <a href="{{route('home')}}">
+                <a href="https://reyting.mc.uz/">
                   <p class="desc">{{__('messages.rating')}}</p>
                 </a>
               </div>
@@ -239,7 +239,7 @@
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/meninguyim.png')}}" alt="image" />
-                <a href="https://billing.mjko.uz/">
+                <a href="https://meninguyim.mjko.uz/">
                   <p class="desc">{{__('messages.information_system_management')}}</p>
                 </a>
               </div>
@@ -263,13 +263,13 @@
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/file.png')}}" alt="image" />
-                <a href="{{route('home')}}">
+                <a href="https://lex.uz/uz/docs/-5639113?ONDATE=05.04.2022">
                   <p class="desc">{{__('messages.examination_planning_documents')}}</p>
                 </a>
               </div>
               <div class="eSystemBox">
                 <img src="{{asset('files/eSystems/review.png')}}" alt="image" />
-                <a href="{{route('home')}}">
+                <a href="https://reyting.mc.uz/">
                   <p class="desc">{{__('messages.electronic_rating_contracting_organizations')}}</p>
                 </a>
               </div>
@@ -348,195 +348,36 @@
               <div class="accordions-box">
                 <div class="accordion">
                   <button class="accordionBtn">
-                    Ichimlik suvi taʼminotiga ulanish uchun nima qilish
-                    kerak?<span>&#x3e;</span>
+                    {{__('messages.question-1')}}<span>&#x3e;</span>
                   </button>
-                  <div class="content">
-                    O‘zbekiston Respublikasi Vazirlar Mahkamasining 2018 yil 31
-                    martdagi Muhandislik-kommunikatsiya tarmoqlariga ulanish
-                    bo‘yicha davlat xizmatlari ko‘rsatishning maʼmuriy
-                    reglamentlarini tasdiqlash to‘g‘risida gi 256-son qarorida
-                    belgilangan parametrlar asosida:
-                    <br />
-                    1. Isteʼmolchi suv taʼminoti va suvni chiqarib tashlash
-                    tarmoqlariga ulanish uchun Davlat xizmatlari markaziga o‘zi
-                    kelib murojaat qilish yoki Yagona interaktiv davlat
-                    xizmatlari portalida ro‘yxatdan o‘tishi va Davlat xizmatini
-                    ko‘rsatish uchun yig‘im to‘lashi kerak.
-                    <br />
-                    2. Davlat xizmatlari markazi (1 soat mobaynida) yoki Yagona
-                    interaktiv Davlat xizmatlari portali (avtomatik tarzda)
-                    texnik shartlarni ishlab chiqish uchun so‘rovnomani suv
-                    quvurlari va kanalizatsiya xo‘jaligi tashkiloti yuborishi
-                    kerak.
-                    <br />
-                    3. Suv quvurlari va kanalizatsiya xo‘jaligi tashkiloti
-                    tashkiloti 3 ish kuni mobaynida texnik shartlarni ishlab
-                    chiqishi va Davlat xizmatlari markaziga (o‘zi kelib murojaat
-                    etganda) yoki isteʼmolchiga Yagona interaktiv Davlat
-                    xizmatlari portali orqali (elektron tarzda murojaat etgan
-                    taqdirda) yuborishi kerak.
-                    <br />
-                    4. Suv quvurlari va kanalizatsiya xo‘jaligi tashkiloti
-                    tashkiloti loyihalash va qurilish-montaj ishlarini amalga
-                    oshirish bo‘yicha o‘zining tijorat takliflarini va
-                    shartnomalar loyihalarini berish huquqiga ega.
+                  <div class="content">{{__('messages.answer-1-1')}} <br> {{__('messages.answer-1-2')}} <br> {{__('messages.answer-1-3')}} <br> {{__('messages.answer-1-4')}} <br> {{__('messages.answer-1-5')}}
                   </div>
                 </div>
                 <div class="accordion">
                   <button class="accordionBtn">
-                    Uy-joy mulkdorlari shirkati vakolatiga nimalar kiradi?
-                    <span>&#x3e;</span>
+                    {{__('messages.question-2')}}<span>&#x3e;</span>
                   </button>
                   <div class="content">
-                    Ichimlik suvi tarmog‘idagi avariya xolatlari bo‘yicha
-                    “O‘zsuvtaʼminot” AJning qisqa aloqa markazi “1255” va
-                    telegramdagi Dispetcher 24/7 SUV va https://t.me/uzsuv_chat-
-                    “O‘zsuvtaʼminot” AJ ga murojaat qilish kerak.
+                    {{__('messages.answer-2')}}
                   </div>
                 </div>
                 <div class="accordion">
                   <button class="accordionBtn">
-                    Uy-joy mulkdorlari shirkati vakolatiga nimalar kiradi?
-                    <span>&#x3e;</span>
+                    {{__('messages.question-3')}}<span>&#x3e;</span>
                   </button>
-                  <div class="content">
-                    Shirkat boshqaruvining vakolatlariga quyidagilar kiradi:
-                    shirkat aʼzolarining umumiy yig‘ilishini chaqirish va uni
-                    o‘tkazishni tashkil etish; umumiy mol-mulkni, yer
-                    uchastkasini va shirkatning mol-mulkini saqlashga doir
-                    ishlar rejasining loyihasini hamda uning ijrosi
-                    to‘g‘risidagi hisobotni tuzish; shirkatning yillik
-                    daromadlar va xarajatlar smetasi loyihasini hamda uning
-                    ijrosi to‘g‘risidagi hisobotni tuzish; shirkat ustavi
-                    talablarining va shirkat aʼzolari umumiy yig‘ilishi
-                    qarorlarining bajarilishini taʼminlash; umumiy mol-mulkka
-                    hamda shirkatning mol-mulkiga xizmat ko‘rsatish va uni
-                    taʼmirlash uchun tanlov asosida pudratchilarni tanlash;
-                    tanlov g‘olibi bilan umumiy mol-mulkni va shirkatning
-                    mol-mulkini saqlash, unga xizmat ko‘rsatish hamda uni
-                    taʼmirlash uchun shartnomalar tuzish to‘g‘risida qaror qabul
-                    qilish; umumiy mol-mulkning, yer uchastkasining va shirkat
-                    mol-mulkining asralishi hamda saqlanishi ustidan nazorat
-                    qilish; shirkatning asbob-uskunalarini, anjomlarini va
-                    boshqa moddiy qimmatliklarini olish hamda sotish,
-                    topshirish, ayirboshlash, ijaraga berish, shuningdek ularni
-                    shirkatning balansidan chiqarish to‘g‘risida qarorlar qabul
-                    qilish; shirkat aʼzolarining arizalari va shikoyatlarini
-                    ko‘rib chiqish; ish yuritish, buxgalteriya hisobini va
-                    hisobotini yuritish, mablag‘larning tushumi hamda
-                    sarflanishi hisobini shirkatdagi har bir ko‘p kvartirali uy
-                    bo‘yicha alohida-alohida yuritish; shirkat aʼzolarining
-                    majburiy badallari to‘liq tushishini tashkil etish va
-                    taʼminlash; shirkat aʼzolarining umumiy yig‘ilishi tomonidan
-                    tasdiqlangan shirkatning daromadlar va xarajatlar smetasiga
-                    muvofiq shirkat mablag‘larini tasarruf etish. Shirkat
-                    boshqaruvi shirkat aʼzolari oldida quyidagilar uchun
-                    javobgardir: umumiy mol-mulkka xizmat ko‘rsatish va uni
-                    taʼmirlash ishlarining tuzilgan shartnomalarga muvofiq
-                    tanlov asosida tashkil etilishi; muhandislik tarmoqlariga va
-                    boshqa umumiy mol-mulkka xizmat ko‘rsatishning lozim
-                    darajadagi sifati taʼminlanishi; taʼmirlash ishlarini
-                    belgilangan normalar va talablarga muvofiq sifatli bo‘lishi
-                    hamda o‘z vaqtida o‘tkazilishi; shirkat mablag‘laridan
-                    umumiy mol-mulkni saqlash va taʼmirlash uchun belgilangan
-                    maqsadda foydalanilishi; umumiy foydalanishdagi joylarning
-                    va ko‘p kvartirali uylarga tutash yer uchastkalarining lozim
-                    darajadagi sanitariya holati, ularning obodonlashtirilishi.
-                    Shirkat boshqaruvi muntazam ravishda, biroq uch oyda kamida
-                    bir marta umumiy mol-mulkni saqlash bo‘yicha ishlar
-                    rejalarining bajarilishi, amalga oshirilgan va
-                    rejalashtirilayotgan xarajatlar, majburiy badallarni
-                    yig‘ish, tadbirkorlik faoliyatidan olinadigan daromadlar
-                    (foyda) to‘g‘risida shirkat aʼzolari oldida hisobot beradi.
-                    Hisobotni taqdim etish shakli shirkatning barcha aʼzolari
-                    uchun hisobotdan foydalanish imkoniyatini taʼminlashi kerak
-                    va u shirkat aʼzolari umumiy yig‘ilishining qarori bilan
-                    belgilanadi.
-                  </div>
+                  <div class="content">{{__('messages.answer-3')}}</div>
                 </div>
                 <div class="accordion">
                   <button class="accordionBtn">
-                    Noqonuniy qurilmalarga nisbatan qanday choralar ko‘riladi?
-                    <span>&#x3e;</span>
+                    {{__('messages.question-4')}}<span>&#x3e;</span>
                   </button>
-                  <div class="content">
-                    Ko‘p kvartirali uydagi kvartira mulkdori mahalliy davlat
-                    hokimiyati organlaridan tegishli ruxsatnoma olmasdan o‘ziga
-                    qarashli joyni o‘zboshimchalik bilan qayta qurgan yoki
-                    o‘zgartirgan taqdirda, qonun hujjatlarida belgilangan
-                    tartibda javobgar bo‘ladi hamda bu joyni o‘z hisobidan
-                    avvalgi holatiga keltirishi shart. Obyektni qayta
-                    rejalashtirish (rekonstruksiya qilish) deganda quyidagilar
-                    tushuniladi: binolar va inshootlarning mustahkamligi,
-                    zilzilabardoshliligiga taʼsir qiluvchi yuk ko‘taruvchi
-                    qismlarining o‘zgarishiga olib keladigan hajmi va maydonini
-                    o‘zgartirish; binolar va inshootlarning mustahkamligi,
-                    zilzilabardoshliligiga taʼsir qiluvchi yuk ko‘taruvchi
-                    qismlarini o‘zgartirmasdan hajmi va maydonini o‘zgartirish;
-                    bino va inshootlarning dastlabki hajmini saqlab qolgan holda
-                    ularning asosiy qismlariga o‘zgartirish kiritish; o‘z yer
-                    uchastkasida bir-biriga tutashib ketuvchi va alohida
-                    qo‘shimcha bino va inshootlar qurish Vazirlar Mahkamasining
-                    2018 yil 18 maydagi 370-son qaroriga 2-ILOVA “Obyektni qayta
-                    ixtisoslashtirish va rekonstruksiya qilish uchun ruxsatnoma
-                    berish bo‘yicha davlat xizmatlarini ko‘rsatishning maʼmuriy
-                    reglamentiga asosan yuridik va jismoniy shaxslarning
-                    (keyingi o‘rinlarda ariza beruvchilar deb ataladi)
-                    obyektlarni qayta ixtisoslashtirish va rekonstruksiya qilish
-                    uchun ruxsatnomalar (keyingi o‘rinlarda ruxsatnoma deb
-                    ataladi) berish tartibini belgilangan.
-                  </div>
+                  <div class="content">{{__('messages.answer-4')}}</div>
                 </div>
                 <div class="accordion">
                   <button class="accordionBtn">
-                    Metrologiya-xisoblagichlarni qiyoslashdan o‘tkazish tartibi
-                    qanday? <span>&#x3e;</span>
+                    {{__('messages.question-5')}}<span>&#x3e;</span>
                   </button>
-                  <div class="content">
-                    Yuridik va jismoniy shaxslarga ichimlik va issiq suvni
-                    hisobga olish uskunasini (hisoblagichni) yechish,
-                    qiyoslashdan o‘tkazish va o‘rnatish bo‘yicha davlat
-                    xizmatlarini ko‘rsatish tartibi, O‘zbekiston Respublikasi
-                    Vazirlar Mahkamasining 2019 yil 20 avgustdagi 698-son qarori
-                    bilan tasdiqlangan “Yuridik va jismoniy shaxslarning
-                    ichimlik va issiq suvni hisobga olish uskunalarini
-                    (hisoblagichni) yechish, qiyoslashdan o‘tkazish va o‘rnatish
-                    bo‘yicha davlat xizmatlari ko‘rsatishning maʼmuriy
-                    reglamenti” da belgilangan. Unga muvofiq, hisoblagichlarni
-                    qiyoslashdan o‘tkazish bo‘yicha Davlat xizmatlari markazlari
-                    orqali yoki Yagona interaktiv davlat xizmatlari portali
-                    (YAIDXP) orqali ko‘rsatiladi. Bunda isteʼmolchi Davlat
-                    xizmatlari markaziga o‘zi kelib murojaat etadi yoki davlat
-                    xizmatlaridan elektron tarzda foydalanish uchun YAIDXPda
-                    ro‘yxatdan o‘tadi va tegishli anketani to‘ldiradi.
-                    Isteʼmolchidan boshqa hujjatlarni talab qilish taʼqiqlanadi.
-                    Davlat xizmatini ko‘rsatganlik uchun jismoniy shaxslardan
-                    bazaviy hisoblash miqdorining 20 foizi (2021 yil fevral
-                    oyidan – 49 000 so‘m) miqdorida yig‘im undiriladi.
-                    Hisoblagichlarni yechish, qiyoslashdan o‘tkazish uchun
-                    topshirish va qiyoslashdan o‘tkazilgandan keyin o‘rnatish
-                    taʼminotchi korxona vakillari tomonidan isteʼmolchi
-                    ishtirokida amalga oshiriladi. Taʼminotchi korxona
-                    so‘rovnoma kelib tushganidan so‘ng 5 ish kuni ichida
-                    isteʼmolchi bilan kelishib, uning ishtirokida tegishli
-                    dalolatnomani 2 nusxada tuzgan holda hisobga olish
-                    uskunasini yechib oladi. Hisobga olish uskunasini
-                    qiyoslashdan o‘tkazish natijasi ijobiy bo‘lgan taqdirda,
-                    taʼminotchi korxona tomonidan hisobga olish uskunasi
-                    qiyoslashdan o‘tkazilgandan keyin 3 ish kuni ichida
-                    isteʼmolchi ishtirokida o‘rnatilib, ikki nusxada
-                    hisoblagichni o‘rnatish to‘g‘risidagi dalolatnoma tuzgan
-                    holda tamg‘alanadi. Dalolatnomaning bir nusxasi isteʼmolda
-                    qoldiriladi. Hisobga olish uskunasini qiyoslashdan o‘tkazish
-                    natijasi salbiy bo‘lganda, hisobga olish uskunasi
-                    foydalanishga yaroqsiz deb topiladi. Taʼminotchi korxona
-                    hisobga olish uskunasini 3 ish kunida taʼmirlash yoki
-                    yangisiga almashtirish chorasini ko‘radi. Ichimlik va issiq
-                    suvni hisobga olish uskunasini taʼmirlash yoki yangisiga
-                    almashtirishga doir sarf-xarajatlar taʼminotchi korxona
-                    tomonidan qoplanadi.
-                  </div>
+                  <div class="content">{{__('messages.answer-5')}}</div>
                 </div>
               </div>
             </div>
@@ -559,29 +400,29 @@
                     <th>
                       <select id="selectRegion">
                         <option value="qr_res">
-                          Qoraqalpog'iston Respublikasi
+                          {{__('messages.qr_res')}}
                         </option>
-                        <option value="nukus_city">Nukus shaxri</option>
-                        <option value="amudaryo">Amudaryo tumani</option>
-                        <option value="beruniy">Beruniy tumani</option>
-                        <option value="bozatov">Bozatov tumani</option>
-                        <option value="kegeyli">Kegeyli tumani</option>
-                        <option value="qonlikol">Qonlikol tumani</option>
-                        <option value="qoraozak">Qoraozak tumani</option>
-                        <option value="qongirot">Qong'irot tumani</option>
-                        <option value="moynoq">Moynoq tumani</option>
-                        <option value="nukus">Nukus tumani</option>
-                        <option value="taxiatash">Taxiatash tumani</option>
-                        <option value="taxtakopir">Taxtakopir tumani</option>
-                        <option value="tortkol">Tortkol tumani</option>
-                        <option value="xujayli">Xujayli tumani</option>
-                        <option value="chimbay">Chimbay tumani</option>
-                        <option value="shumanay">Shumanay tumani</option>
-                        <option value="ellikqala">Ellikqala tumani</option>
+                        <option value="nukus_city">{{__('messages.nukus_city')}}</option>
+                        <option value="amudaryo">{{__('messages.amudaryo')}}</option>
+                        <option value="beruniy">{{__('messages.beruniy')}}</option>
+                        <option value="bozatov">{{__('messages.bozatov')}}</option>
+                        <option value="kegeyli">{{__('messages.kegeyli')}}</option>
+                        <option value="qonlikol">{{__('messages.qonlikol')}}</option>
+                        <option value="qoraozak">{{__('messages.qoraozak')}}</option>
+                        <option value="qongirot">{{__('messages.qongirot')}}</option>
+                        <option value="moynoq">{{__('messages.moynoq')}}</option>
+                        <option value="nukus">{{__('messages.nukus')}}</option>
+                        <option value="taxiatash">{{__('messages.taxiatash')}}</option>
+                        <option value="taxtakopir">{{__('messages.taxtakopir')}}</option>
+                        <option value="tortkol">{{__('messages.tortkol')}}</option>
+                        <option value="xujayli">{{__('messages.xujayli')}}</option>
+                        <option value="chimbay">{{__('messages.chimbay')}}</option>
+                        <option value="shumanay">{{__('messages.shumanay')}}</option>
+                        <option value="ellikqala">{{__('messages.ellikqala')}}</option>
                       </select>
                     </th>
-                    <th>Hisoblagich</th>
-                    <th>Hisoblagichsiz</th>
+                    <th>{{__('messages.counter')}}</th>
+                    <th>{{__('messages.without_counter')}}</th>
                   </tr>
                 </thead>
                 <tbody></tbody>
@@ -1065,11 +906,11 @@
                 <img src="{{asset('files/swipper/president.png')}}" alt="gerb image" />
 				        {{__('messages.OzResPrezRas')}}			
               </a>
-              <a class="swiper-slide" href="http://data.gov.uz/uz" style="color: #000">
+              <a class="swiper-slide" href="https://data.egov.uz/rus" style="color: #000">
                   <img src="{{asset('files/swipper/open-source-gov.png')}}" alt="gerb image" />
                   {{__('messages.OzResAshiqMag')}}	
               </a>
-              <a class="swiper-slide" href="https://www.lex.uz/uz/" style="color: #000">
+              <a class="swiper-slide" href="https://lex.uz/ru" style="color: #000">
                 <img src="{{asset('files/swipper/lexuz.png')}}" alt="gerb image" />
 				        {{__('messages.OzResNizamHujjet')}}					
               </a>

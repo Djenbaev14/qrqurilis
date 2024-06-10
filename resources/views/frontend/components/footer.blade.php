@@ -10,15 +10,14 @@
           </span>
         </div>
         <p>
-          <i class="fa-solid fa-location-dot"></i> {{__('messages.address')}}: 230100, Nókis qalası
-          G‘arezsizlik ko‘chasi, 59a-jay
+          <i class="fa-solid fa-location-dot"></i> {{__('messages.address')}}: {{__('messages.address_nukus')}}
         </p>
         <p>
           <i class="fa-solid fa-phone"></i> {{__('messages.phone')}}: (+99861) 222-74-50
         </p>
         <p><i class="fa-solid fa-print"></i> {{__('messages.fax')}}: (+99861) 222-73-69</p>
         <p>
-          2024 © Qaraqalpaqstan Respublikası Qurılıs hám úy-jay kommunal xojalıǵı ministrligi | DBC24.uz
+          2024 © {{__('messages.qq_ministry')}} | DBC24.uz
         </p>
       </div>
       <div class="col-2">

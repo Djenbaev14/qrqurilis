@@ -82,5 +82,9 @@ return [
     'file-placement'=>'Fayl jaylastırıw',
     'appeal'=>'Múrájat',
     'attribution-code'=>'Tastıyıqlaw kodı ',
-    'send-request'=>'Múrájat jiberiw'
+    'send-request'=>'Múrájat jiberiw',
+    
+    'kop_qavatli_uylar'=>"Kóp qabatlı úyler",
+    'boshqaruv_kompaniyalar_soni'=>'Basqarıw kompaniyalar sanı ',
+    'shirkatlar_soni'=>'Shirketler sanı '
 ];

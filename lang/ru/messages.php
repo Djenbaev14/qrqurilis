@@ -78,6 +78,10 @@ return [
     'appeal'=>'Обращение',
     'file-placement'=>'Размещение файлов',
     'attribution-code'=>'Код подтверждения',
-    'send-request'=>'Отправить обращение'
+    'send-request'=>'Отправить обращение',
+    
+    'kop_qavatli_uylar'=>"Многоквартирные дома",
+    'boshqaruv_kompaniyalar_soni'=>'Количество управляющих компаний',
+    'shirkatlar_soni'=>'Количество товариществ'
 
 ];

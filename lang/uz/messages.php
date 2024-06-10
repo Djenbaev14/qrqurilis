@@ -81,5 +81,9 @@ return [
     'appeal'=>'Murojaat',
     'file-placement'=>' Fayl joylashtirish',
     'attribution-code'=>'Tasdiqlash kodi',
-    'send-request'=>'Murojaatni yuborish'
+    'send-request'=>'Murojaatni yuborish',
+
+    'kop_qavatli_uylar'=>"Ko'p qavatli uylar",
+    'boshqaruv_kompaniyalar_soni'=>'Boshqaruv kompaniyalar soni',
+    'shirkatlar_soni'=>'Shirkatlar soni'
 ];

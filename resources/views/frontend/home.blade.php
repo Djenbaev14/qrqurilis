@@ -124,7 +124,7 @@
             <div class="section-top">
               <h1 class="title">{{__('messages.news')}}</h1>
               <button>
-                <a href="#"
+                <a href="/news"
                   >{{__('messages.all_news')}} <i class="fa-solid fa-arrow-right"></i
                 ></a>
               </button>
@@ -1053,26 +1053,26 @@
 
           <div class="swiper resourceSwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" href="https://parliament.gov.uz/" style="color: #000">
+              <a class="swiper-slide" href="https://parliament.gov.uz/" style="color: #000">
                 <img src="{{asset('files/swipper/qp.png')}}" alt="gerb image" />
 				        {{__('messages.OzResOliyMaj')}}			
-              </div>
-              <div class="swiper-slide" href="https://senat.uz/" style="color: #000">
+              </a>
+              <a class="swiper-slide" href="https://senat.uz/" style="color: #000">
                 <img src="{{asset('files/swipper/uz-gerb-flag.png')}}" alt="gerb image" />
 				        {{__('messages.OzResOliyMajSenat')}}			
-              </div>
-              <div class="swiper-slide" href="https://president.uz/uz" style="color: #000">
+              </a>
+              <a class="swiper-slide" href="https://president.uz/uz" style="color: #000">
                 <img src="{{asset('files/swipper/president.png')}}" alt="gerb image" />
 				        {{__('messages.OzResPrezRas')}}			
-              </div>
-              <div class="swiper-slide" href="http://data.gov.uz/uz" style="color: #000">
+              </a>
+              <a class="swiper-slide" href="http://data.gov.uz/uz" style="color: #000">
                   <img src="{{asset('files/swipper/open-source-gov.png')}}" alt="gerb image" />
                   {{__('messages.OzResAshiqMag')}}	
-              </div>
-              <div class="swiper-slide" href="https://www.lex.uz/uz/" style="color: #000">
+              </a>
+              <a class="swiper-slide" href="https://www.lex.uz/uz/" style="color: #000">
                 <img src="{{asset('files/swipper/lexuz.png')}}" alt="gerb image" />
 				        {{__('messages.OzResNizamHujjet')}}					
-              </div>
+              </a>
             </div>
             <div class="swiper-buttons">
               <div class="swiper-button-next">
@@ -1113,145 +1113,145 @@ const regionsAndVals = {
   qr_res: {
     name: "Qoraqalpoq",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 1576 },
-      { title: "Boshqaruv kompaniyalar soni", value: 31 },
-      { title: "Shirkatlar soni", value: 5 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 1576 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 31 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 5 },
     ],
   },
   nukus_city: {
     name: "Nukus shaxri",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 663 },
-      { title: "Boshqaruv kompaniyalar soni", value: 10 },
-      { title: "Shirkatlar soni", value: 1 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 663 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 10 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 1 },
     ],
   },
   amudaryo: {
     name: "Amudaryo tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 60 },
-      { title: "Boshqaruv kompaniyalar soni", value: 3 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 60 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 3 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   beruniy: {
     name: "Beruniy tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 85 },
-      { title: "Boshqaruv kompaniyalar soni", value: 1 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 85 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 1 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   bozatov: {
     name: "Bozatov tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 7 },
-      { title: "Boshqaruv kompaniyalar soni", value: 1 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 7 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 1 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   kegeyli: {
     name: "Kegeyli tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 24 },
-      { title: "Boshqaruv kompaniyalar soni", value: 1 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 24 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 1 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   qonlikol: {
     name: "Qonlikol tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 25 },
-      { title: "Boshqaruv kompaniyalar soni", value: 1 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 25 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 1 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   qoraozak: {
     name: "Qoraozak tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 17 },
-      { title: "Boshqaruv kompaniyalar soni", value: 1 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 17 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 1 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   qongirot: {
     name: "Qong'irot tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 198 },
-      { title: "Boshqaruv kompaniyalar soni", value: 4 },
-      { title: "Shirkatlar soni", value: 2 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 198 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 4 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 2 },
     ],
   },
   moynoq: {
     name: "Moynoq tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 37 },
-      { title: "Boshqaruv kompaniyalar soni", value: 1 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 37 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 1 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   nukus: {
     name: "Nukus tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 29 },
-      { title: "Boshqaruv kompaniyalar soni", value: 0 },
-      { title: "Shirkatlar soni", value: 1 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 29 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 0 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 1 },
     ],
   },
   taxiatash: {
     name: "Taxiatash tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 105 },
-      { title: "Boshqaruv kompaniyalar soni", value: 2 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 105 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 2 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   taxtakopir: {
     name: "Taxtakopir tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 25 },
-      { title: "Boshqaruv kompaniyalar soni", value: 1 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 25 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 1 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   tortkol: {
     name: "Tortkol tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 72 },
-      { title: "Boshqaruv kompaniyalar soni", value: 2 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 72 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 2 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   xujayli: {
     name: "Xujayli tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 107 },
-      { title: "Boshqaruv kompaniyalar soni", value: 1 },
-      { title: "Shirkatlar soni", value: 1 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 107 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 1 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 1 },
     ],
   },
   chimbay: {
     name: "Chimbay tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 35 },
-      { title: "Boshqaruv kompaniyalar soni", value: 1 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 35 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 1 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   shumanay: {
     name: "Shumanay tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 27 },
-      { title: "Boshqaruv kompaniyalar soni", value: 1 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 27 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 1 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
   ellikqala: {
     name: "Ellikqala tumani",
     vals: [
-      { title: "Ko'p qavatli uylar", value: 60 },
-      { title: "Boshqaruv kompaniyalar soni", value: 1 },
-      { title: "Shirkatlar soni", value: 0 },
+      { title: "<?=__('messages.kop_qavatli_uylar')?>", value: 60 },
+      { title: "<?=__('messages.boshqaruv_kompaniyalar_soni')?>", value: 1 },
+      { title: "<?=__('messages.shirkatlar_soni')?>", value: 0 },
     ],
   },
 };
@@ -1288,15 +1288,15 @@ const myChart = new Chart(document.getElementById("myChart"), {
 
 renderVals.innerHTML = `
   <p>
-    <span>${vals[0].title}</span>
+    <span><?=__('messages.kop_qavatli_uylar')?></span>
     <span style="color: ${backgroundColors[0]}">${vals[0].value}</span>
   </p>
   <p>
-    <span>${vals[1].title}</span>
+    <span><?=__('messages.boshqaruv_kompaniyalar_soni')?></span>
     <span style="color: ${backgroundColors[1]}">${vals[1].value}</span>
   </p>
   <p>
-    <span>${vals[2].title}</span>
+    <span><?=__('messages.shirkatlar_soni')?></span>
     <span style="color: ${backgroundColors[2]}">${vals[2].value}</span>
   </p>
 `;
@@ -1312,15 +1312,15 @@ selectRegionEl.addEventListener("change", (e) => {
 
   renderVals.innerHTML = `
   <p>
-    <span>${vals[0].title}</span>
+    <span><?=__('messages.kop_qavatli_uylar')?></span>
     <span style="color: ${backgroundColors[0]}">${vals[0].value}</span>
   </p>
   <p>
-    <span>${vals[1].title}</span>
+    <span><?=__('messages.boshqaruv_kompaniyalar_soni')?></span>
     <span style="color: ${backgroundColors[1]}">${vals[1].value}</span>
   </p>
   <p>
-    <span>${vals[2].title}</span>
+    <span><?=__('messages.shirkatlar_soni')?></span>
     <span style="color: ${backgroundColors[2]}">${vals[2].value}</span>
   </p>
 `;

@@ -24,7 +24,7 @@
       <div class="col-2">
         <ul class="links">
           @foreach ($menus as $menu)
-            <a href="/{{$menu->item->slug}}"><span>∷</span> <span>{{$menu->item->$title}}</span></a>
+            <a href="/{{$menu->menu_item[0]->item->slug}}"><span>∷</span> <span>{{$menu->menu_item[0]->item->$title}}</span></a>
           @endforeach
         </ul>
       </div>

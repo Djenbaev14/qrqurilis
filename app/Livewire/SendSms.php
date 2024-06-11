@@ -34,7 +34,7 @@ class SendSms extends Component
                         'Authorization' => 'Bearer ' . $auth['data']['token'],
                         ])->post($url, [
                             'mobile_phone' => '998'.$this->phone,
-                            "message" => "Qrqurilis.uz sms kodi:".' '.$ran,
+                            "message" => "Qrqurilis.uz saytina murajat jiberiw ushin sms kodi:".' '.$ran,
                         ]);
                         
                     $resposnse = $resposnse->json();

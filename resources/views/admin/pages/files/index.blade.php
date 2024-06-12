@@ -74,7 +74,7 @@
                 <tr>
                     <td>{{$file->id}}</td>
                     <td>{{$file->name}}</td>
-                    <td><a href="{{env('APP_URL')}}/documents/{{$file->file}}">{{env('APP_URL')}}/documents/{{$file->file}}</a></td>
+                    <td><a href="https://www.qrqurilis.uz/documents/{{$file->file}}">{{env('APP_URL')}}/documents/{{$file->file}}</a></td>
                     <td class="d-flex">
                       {{-- <a href="{{route('dashboard.pages.edit',$file->id)}}" class="btn btn-warning btn-sm float-left mr-1 mb-1">
                           <i class="ri-edit-box-line"></i>

@@ -34,15 +34,6 @@
           <form action="{{ route('dashboard.file.store') }}" class="form-main" method="POST" enctype="multipart/form-data">
               @csrf
               <div class="row">
-                @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-                @endif
                   <div class="col-md-12">
                     <label for="simpleinput" class="form-label">Названия</label>
                     <input type="text" name="name" value="" id="simpleinput" class="form-control">

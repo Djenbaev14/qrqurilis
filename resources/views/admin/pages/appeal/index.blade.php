@@ -78,7 +78,7 @@
               </tbody>
             @empty
                 <tr>
-                    <td colspan="5" class="text-center">
+                    <td colspan="9" class="text-center">
                         <h4>Страницы нет</h4>
                     </td>
                 </tr>

@@ -23,7 +23,7 @@
           <i class="fa-regular fa-envelope"></i>
           <div>
             <p>{{__('messages.email')}}</p>
-            <p>minstroy-rk@umail.uz</p>
+            <p>minstroy-rk@umail.uz , komplayens@umail.uz</p>
           </div>
         </div>
         <div class="top-tools">

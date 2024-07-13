@@ -109,7 +109,7 @@
 @endsection
 
 @push('js')
-  
+
 
 <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/super-build/ckeditor.js"></script>
 <script>

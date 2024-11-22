@@ -23,9 +23,8 @@ class HomeController extends Controller
         $title='title_'.session()->get('locale');
         $body='body_'.session()->get('locale');
         $slug='slug_'.session()->get('locale');
-
         // Session::forget('locale');
-        return view('frontend.home',compact('menus','items','title','body','slug','posts','categories','photos'));
+        return view('frontend.home1',compact('menus','items','title','body','slug','posts','categories','photos'));
     }
 
     public function page1($m,$i){

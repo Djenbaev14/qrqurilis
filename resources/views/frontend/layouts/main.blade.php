@@ -27,11 +27,11 @@
         @include('sweetalert::alert',['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 
         <script>
-          window.replainSettings = { id: '0be94821-35a0-4277-86a7-fd025840a47c' };
+          window.replainSettings = { id: '275e5098-65a8-4d43-b18b-ab13c2b2bf70' };
           (function(u){var s=document.createElement('script');s.async=true;s.src=u;
           var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
           })('https://widget.replain.cc/dist/client.js');
-        </script>
+          </script>
         <script src="https://kit.fontawesome.com/32ee8f9848.js" crossorigin="anonymous"></script>
         <script>
           AOS.init();

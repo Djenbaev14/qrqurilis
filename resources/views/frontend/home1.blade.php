@@ -494,7 +494,7 @@
                   id="jqvmap1_{{__('messages.taxtakopir')}}"
                   class="jqvmap-region"
                   fill-opacity="1"
-                  data-admin="ERNAZAROV PERDEBAY BEKTIBAEVICH"
+                  data-admin="VAKANT"
                   data-admin-phone="+998 (61) 435-15-47"
                   data-admin-email="taxtakopir.arx@umail.uz"
                   data-admin-reception-days="Dúyshembi sársenbi juma kúnleri 10:00 den 13:00 ge shekem"
@@ -663,7 +663,7 @@
                   id="jqvmap1_{{__('messages.qonlikol')}}"
                   class="jqvmap-region"
                   fill-opacity="1"
-                  data-admin="MEDETBAEV ISLAMBEK DAUTBAEVICH"
+                  data-admin="VAKANT"
                   data-admin-phone="+998 (55) 105-12-55"
                   data-admin-email="qurilisuy-jaykom@umail.uz"
                   data-admin-reception-days="Dúyshembi-Sárshenbi-Juma 10:00 den 13:00 ge shekem"
@@ -695,8 +695,8 @@
                   original="#e0e0e0"
                   id="jqvmap1_{{__('messages.nukus_city')}}"
                   class="jqvmap-region active"
-                  data-admin="JEKSEMBIEV JETKERBAY XOJABAEVICH"
-                  data-admin-phone="+998 (99) 717-83-38"
+                  data-admin="VAKANT"
+                  data-admin-phone="+998 (91) 260-70-79"
                   data-admin-email="nukus-arxuyjoy@umail.uz"
                   data-admin-reception-days="Dúyshembi sársenbi juma kúnleri 10:00 den 13:00 ge shekem"
                 ></path>
@@ -741,7 +741,7 @@
               <div class="body">
                 <div>
                   <p>{{__('messages.head_department')}}</p>
-                  <p id="admin-id">JEKSEMBIEV JETKERBAY XOJABAEVICH</p>
+                  <p id="admin-id">VAKANT</p>
                 </div>
                 <div>
                   <p>{{__('messages.email')}}</p>
@@ -749,7 +749,7 @@
                 </div>
                 <div>
                   <p>{{__('messages.phone')}}</p>
-                  <p id="admin-phone">(+998 99) 717-83-38</p>
+                  <p id="admin-phone">(+998 91) 260-70-79</p>
                 </div>
                 <div>
                   <p>{{__('messages.reception_days')}}</p>

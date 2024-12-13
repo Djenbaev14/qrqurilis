@@ -27,6 +27,9 @@
           </div>
         </div>
         <div class="top-tools">
+          <button class="speech">
+            <i class="fa-solid fa-volume-high"></i>
+          </button>
           <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
@@ -290,6 +293,12 @@
     </div>
   </div>
 </header>
+<div class="search-modal modal">
+  <div class="modal-inner">
+    <input type="search" id="search-input" required autocomplete="off" />
+    <button id="search-modal-close">OK</button>
+  </div>
+</div>
 @push('js')
   <script>
     document.getElementById("spec-btn").addEventListener("click", (e) => {
@@ -298,7 +307,42 @@
   </script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-    
+    const searchBtn = document.querySelector(".search");
+    const modal = document.querySelector(".modal");
+    const searchClose = document.querySelector("#search-modal-close");
+
+    searchBtn.addEventListener("click", () => {
+      modal.classList.toggle("active");
+    });
+
+    modal.addEventListener("click", () => {
+      modal.classList.toggle("active");
+
+      const modalInner = modal.children[0];
+
+      modalInner.addEventListener("click", (e) => {
+        e.stopPropagation();
+      });
+    });
+    searchClose.addEventListener("click", () => {
+      modal.classList.remove("active");
+      searchInput.value = "";
+    });
+  </script>
+  <script>
+    document.addEventListener('mouseup', () => {
+      // Get the selected text
+      const selectedText = window.getSelection().toString().trim();
+
+      // If there is selected text, read it aloud
+      if (selectedText) {
+        const utterance = new SpeechSynthesisUtterance(selectedText);
+        utterance.lang = 'ru-RU'; // Set language to English (US)
+        speechSynthesis.speak(utterance);
+      }
+    });
+  </script>
+  <script>
 
 jQuery(document).ready(function ($) {
   $(".SpecialWindow").click(function () {

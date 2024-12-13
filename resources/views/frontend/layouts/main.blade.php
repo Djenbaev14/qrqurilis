@@ -25,7 +25,6 @@
   
         @stack('js')
         @include('sweetalert::alert',['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
-
         <script>
           window.replainSettings = { id: '275e5098-65a8-4d43-b18b-ab13c2b2bf70' };
           (function(u){var s=document.createElement('script');s.async=true;s.src=u;
@@ -98,6 +97,8 @@
             document.querySelector(".header-menu").classList.toggle("active");
           });
         </script>
+    
+        
     </body>
     
 </html> 

@@ -210,7 +210,7 @@ section {
   color: #555;
   transition: color 0.1s;
   padding: 14px 10px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -234,15 +234,16 @@ section {
   visibility: hidden;
   pointer-events: none;
 
+  z-index: 20;
+
   transition: transform 0.2s, opacity 0.3s;
-  z-index: 1111;
 }
 
 .drop-down_items::after {
   content: "";
   position: absolute;
   border-style: solid;
-  border-width: 12px;
+  border-width: 7px;
   border-color: transparent transparent var(--main-blue-color) transparent;
   bottom: 100%;
   left: 35px;
@@ -260,15 +261,12 @@ section {
   padding: 12px;
   text-decoration: none;
   display: block;
-  font-size: 12.5px;
+  font-size: 13px;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #eee;
-}
-.drop-down_link:hover{
-  font-size: 13px;
 }
 
 /* Deep Drop Down */
@@ -316,7 +314,7 @@ section {
 /* Banner */
 
 .banner {
-  background-image: url("../../files/banner/main_bg-1536x861.jpg");
+  background-image: url("../images/banner/main_bg-1536x861.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -577,7 +575,7 @@ section {
 }
 
 .announcement.ad-1 .bg {
-  background-image: url("../../files/elonDesk/desk-bg.jpg");
+  background-image: url("../images/elonDesk/desk-bg.jpg");
   background-size: cover;
   position: absolute;
   top: 0;
@@ -764,7 +762,7 @@ section {
 
 .section-services {
   margin: 40px 0 0 0;
-  background-image: url("../../files/services/services.jpg");
+  background-image: url("../images/services/services.jpg");
   position: sticky;
   background-size: cover;
   background-position: center;
@@ -803,15 +801,12 @@ section {
   display: flex;
   align-items: center;
   gap: 15px;
-  width: 90%; 
+  width: 90%;
 }
 
 .service-gridBox img {
   width: 64px;
   height: 64px;
-}
-.service-gridBox a {
-  color: #fff;
 }
 
 .section-services .section-title {
@@ -955,7 +950,7 @@ section {
 /* Section Regional Administration ============================== */
 
 .section-administrations {
-  background: url("../../files/mapBgBuilding.png");
+  background: url("../images/mapBgBuilding.png");
   background-position: 50% 102%;
   background-size: 550px 350px;
   background-repeat: no-repeat;
@@ -1038,7 +1033,7 @@ section {
 /* Document Section ===================================== */
 
 .document-section {
-  background-image: url("../../files/documentBg.png");
+  background-image: url("../images/documentBg.png");
   height: 100%;
   background-size: cover;
   background-position: center center;
@@ -1247,8 +1242,8 @@ section {
   z-index: 5;
 
   position: fixed;
-  bottom: 25px;
-  right: 100px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .toTop-btn.active {
@@ -1790,6 +1785,7 @@ section {
   margin-top: 40px;
   width: 500px;
   display: flex;
+  gap: 5px  ;
 
   transform: translateY(-150%);
 
@@ -1812,4 +1808,12 @@ section {
   color: #fff;
   border-radius: 6px;
   padding: 8px 5px;
+  cursor: pointer;
+}
+.top-tools .speech {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }

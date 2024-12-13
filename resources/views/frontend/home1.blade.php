@@ -11,112 +11,6 @@
         </div>
       </div>
 
-      <!-- Sections ---------------------------------------------- -->
-      <!-- =========================================================== -->
-
-      <!-- Section latest news -->
-      {{-- <section class="section-news">
-        <div class="container">
-          <!-- Section top -->
-          <div class="section-top">
-            <h1 class="title">{{__('messages.news')}}</h1>
-            <button>
-              <a href="{{route('page-2','news')}}"
-                >{{__('messages.all_news')}} <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </button>
-          </div>
-          <!-- ------------------------------------------ -->
-          <div class="section-inner">
-            <div class="newsCards-box">
-              @foreach ($posts as $post)
-                  
-              <div class="newsCard">
-                <div class="card-imageBox">
-                  <img src="{{asset('uploads/'.$post->image)}}" alt="image-news" />
-                  <div class="image-date">
-                    <p>{{$post->created_at->format('d')}}</p>
-                    <p>{{$post->created_at->format('M')}}, {{$post->created_at->format('Y')}}</p>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-desc">
-                    {{$post->$title}}
-                  </p>
-                  <div class="card-bottom">
-                    <a class="card-moreInfo title" href="{{route('new-new',$post->$slug)}}">{{__('messages.more')}}</a>
-                    <ul class="social-links">
-                      <li class="social-link">
-                        <a href="https://www.instagram.com/minstroykomxoz"><i class="fa-brands fa-instagram"></i></a>
-                      </li>
-                      <li class="social-link">
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                      </li>
-                      <li class="social-link">
-                        <a href="https://www.facebook.com/rk.minstroy"><i class="fa-brands fa-facebook"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              
-              @endforeach
-              
-            </div>
-            <div class="announcement-sidebar">
-              <div class="announcements-list">
-                <div class="announcement ad-1">
-                  <div class="bg"></div>
-                  <h1>e'lon</h1>
-                  <img
-                    src="{{asset('files/icons/speaker.png')}}"
-                    alt="speaker-icon"
-                  />
-                  <p>05-Fevral, 2024</p>
-                  <a href="#">batafsil</a>
-                  <button>barcha e'lonlar</button>
-                </div>
-                <div class="announcement ad-2">
-                  <h1>oz'bekiston bunyodkori</h1>
-                  <p>ijtimoiy-iqtisodiy gazeta</p>
-                </div>
-                <div class="announcement ad-3">
-                  <img src="{{asset('files/house.png')}}" alt="" />
-                  <p>ZILZILABARDOSH UY</p>
-                </div>
-                <ul class="announcement ad-4">
-                  <li>
-                    <a href="#">
-                      <img src="{{asset('files/icons/water.svg')}}" alt="" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="{{asset('files/icons/teplo.png')}}" alt="" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="{{asset('files/icons/het.png')}}" alt="" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="{{asset('files/icons/hududgaz.png')}}" alt="" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="{{asset('files/icons/logo_mah.png')}}" alt="" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> --}}
-
       <section class="section-news">
         <div class="container">
           <div class="section-inner">
@@ -926,13 +820,6 @@
           </div>
         </div>
       </section>
-
-      <div class="search-modal modal">
-        <div class="modal-inner">
-          <input type="search" required autocomplete="off" />
-          <button>OK</button>
-        </div>
-      </div>
     </main>
 @endsection
 @push('css')
@@ -1221,23 +1108,5 @@ selectRegionEl.addEventListener("change", (e) => {
           </script>
 
     
-    <script>
-      const searchBtn = document.querySelector(".search");
-      const modal = document.querySelector(".modal");
-
-      searchBtn.addEventListener("click", () => {
-        modal.classList.toggle("active");
-      });
-
-      modal.addEventListener("click", () => {
-        modal.classList.toggle("active");
-
-        const modalInner = modal.children[0];
-
-        modalInner.addEventListener("click", (e) => {
-          e.stopPropagation();
-        });
-      });
-    </script>
     
 @endpush

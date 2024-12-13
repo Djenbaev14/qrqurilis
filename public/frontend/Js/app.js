@@ -76,7 +76,7 @@ const regionsAndVals = {
     name: "Qoraqalpoq",
     vals: [
       { title: "Ko'p qavatli uylar", value: 1576 },
-      { title: "Boshqaruv servis kompaniyalar soni", value: 31 },
+      { title: "Boshqaruv kompaniyalar soni", value: 31 },
       { title: "Shirkatlar soni", value: 5 },
     ],
   },
@@ -353,9 +353,16 @@ headerTopBar.addEventListener("click", () => {
 
 const searchBtn = document.querySelector(".search");
 const modal = document.querySelector(".modal");
+const searchClose = document.querySelector("#search-modal-close");
+const searchInput = document.querySelector("#search-input");
 
-searchBtn.addEventListener("click", () => {
-  modal.classList.toggle("active");
+// searchBtn.addEventListener("click", () => {
+//   modal.classList.toggle("active");
+// });
+
+searchClose.addEventListener("click", () => {
+  modal.classList.remove("active");
+  searchInput.value = "";
 });
 
 modal.addEventListener("click", () => {

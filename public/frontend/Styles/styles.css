@@ -1200,7 +1200,7 @@ drop-down_link:hover{
   justify-content: space-around;
 }
 
-.footer-inner .col-1 img {
+.footer-inner .col-1 img.footer-logo-image {
   filter: brightness(0) invert(1);
 }
 

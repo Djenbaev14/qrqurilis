@@ -15,6 +15,7 @@
       />
       <link rel="stylesheet" href="{{asset('frontend/Styles/about.css')}}" />
       <link rel="stylesheet" href="{{asset('frontend/Styles/form.css')}}" />
+      <link rel="stylesheet" href="{{asset('frontend/Styles/style.css')}}" />
       @stack('css')
   </head>
 

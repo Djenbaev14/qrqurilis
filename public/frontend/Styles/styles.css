@@ -210,7 +210,7 @@ section {
   color: #555;
   transition: color 0.1s;
   padding: 14px 10px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -233,8 +233,7 @@ section {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
-  z-index: 20;
+  z-index: 1111;
 
   transition: transform 0.2s, opacity 0.3s;
 }
@@ -261,14 +260,16 @@ section {
   padding: 12px;
   text-decoration: none;
   display: block;
-  font-size: 13px;
+  font-size: 12.5px;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #eee;
 }
-
+drop-down_link:hover{
+  font-size: 13px;
+}
 /* Deep Drop Down */
 
 .drop-down_item {
@@ -295,7 +296,7 @@ section {
   content: "";
   position: absolute;
   border-style: solid;
-  border-width: 7px;
+  border-width: 12px;
   border-color: transparent #fff transparent transparent;
   right: 100%;
   top: 10px;
@@ -314,7 +315,7 @@ section {
 /* Banner */
 
 .banner {
-  background-image: url("../images/banner/main_bg-1536x861.jpg");
+  background-image: url("../../files/banner/main_bg-1536x861.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -575,7 +576,7 @@ section {
 }
 
 .announcement.ad-1 .bg {
-  background-image: url("../images/elonDesk/desk-bg.jpg");
+  background-image: url("../../files/elonDesk/desk-bg.jpg");
   background-size: cover;
   position: absolute;
   top: 0;
@@ -762,7 +763,7 @@ section {
 
 .section-services {
   margin: 40px 0 0 0;
-  background-image: url("../images/services/services.jpg");
+  background-image: url("../../files/services/services.jpg");
   position: sticky;
   background-size: cover;
   background-position: center;
@@ -808,7 +809,9 @@ section {
   width: 64px;
   height: 64px;
 }
-
+.service-gridBox a {
+  color: #fff;
+}
 .section-services .section-title {
   z-index: 2;
   font-size: 35px;
@@ -950,7 +953,7 @@ section {
 /* Section Regional Administration ============================== */
 
 .section-administrations {
-  background: url("../images/mapBgBuilding.png");
+  background: url("../../files/mapBgBuilding.png");
   background-position: 50% 102%;
   background-size: 550px 350px;
   background-repeat: no-repeat;
@@ -1033,7 +1036,7 @@ section {
 /* Document Section ===================================== */
 
 .document-section {
-  background-image: url("../images/documentBg.png");
+  background-image: url("../../files/documentBg.png");
   height: 100%;
   background-size: cover;
   background-position: center center;
@@ -1242,8 +1245,8 @@ section {
   z-index: 5;
 
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 100px;
 }
 
 .toTop-btn.active {

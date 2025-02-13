@@ -16,7 +16,7 @@
           <i class="fa-solid fa-phone-volume"></i>
           <div>
             <p>{{__('messages.hotline')}}</p>
-            <p>+998(61) 222-74-50</p>
+            <p>+998(61) 223-24-31</p>
           </div>
         </div>
         <div class="email">

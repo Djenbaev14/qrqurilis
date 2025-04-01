@@ -295,8 +295,11 @@
 </header>
 <div class="search-modal modal">
   <div class="modal-inner">
-    <input type="search" id="search-input" required autocomplete="off" />
-    <button id="search-modal-close">OK</button>
+    <form action="{{route('search')}}" method="POST">
+      @csrf
+      <input type="search" id="search-input" name="search" required autocomplete="off" />
+      <button id="search-modal-close" >OK</button>
+    </form>
   </div>
 </div>
 @push('js')

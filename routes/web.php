@@ -110,4 +110,5 @@ Route::get('/', [\App\Http\Controllers\frontend\HomeController::class,'home'])->
 Route::get('/{m}/{i}', [\App\Http\Controllers\frontend\HomeController::class,'page1'])->name('page-1');
 Route::get('/{m}', [\App\Http\Controllers\frontend\HomeController::class,'page2'])->name('page-2');
 
+Route::post('/search', [HomeController::class,'search'])->name('search');
 Route::get('/view/news/{i}', [\App\Http\Controllers\frontend\HomeController::class,'new'])->name('new-new');

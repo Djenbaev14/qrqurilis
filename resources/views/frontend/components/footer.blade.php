@@ -17,7 +17,7 @@
         </p>
         <p style="display: flex;alig-self:center;justify-content:space-between;">
           <span><i class="fa-solid fa-print"></i> {{__('messages.fax')}}: (+99861) 222-73-69</span>
-          <A href="http://www.uz/ru/res/visitor/index?id=47737" target=_top><IMG height=31 src="https://cnt0.www.uz/counter/collect?id=47737&pg=http%3A//uzinfocom.uz&&col=F7AE00&amp;t=ffffff&amp;p=0E418F" width=88 border=0 alt="Топ рейтинг www.uz">
+          <A href="http://www.uz/uz/res/visitor/index?id=47737" target=_top><IMG height=31 src="https://cnt0.www.uz/counter/collect?id=47737&pg=http%3A//uzinfocom.uz&&col=F7AE00&amp;t=ffffff&amp;p=0E418F" width=88 border=0 alt="Топ рейтинг www.uz"></A>    
         </p>
         <p>
           2024 © {{__('messages.qq_ministry')}} | DBC24.uz

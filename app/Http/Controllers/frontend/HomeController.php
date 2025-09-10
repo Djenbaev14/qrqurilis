@@ -71,7 +71,7 @@ class HomeController extends Controller
         $menus=Menu::orderBy('created_at','desc')->get();
         $items=Item::all();
         $categories=Category::orderBy('created_at','desc')->get();
-        $locale = session()->get('locale');
+        $locale = session()->get('locale') ?? config('app.locale');
         
         $title="title_$locale";
         $body="body_$locale";

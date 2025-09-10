@@ -71,11 +71,11 @@ class HomeController extends Controller
         $menus=Menu::orderBy('created_at','desc')->get();
         $items=Item::all();
         $categories=Category::orderBy('created_at','desc')->get();
-
+        $locale = session()->get('locale');
         
-        $title='title_'.session()->get('locale');
-        $body='body_'.session()->get('locale');
-        $slug='slug_'.session()->get('locale');
+        $title="title_$locale";
+        $body="body_$locale";
+        $slug="slug_$locale";
 
         $post=Post::where($slug,$s)->first();
         return view('frontend.pages.news.new',compact('menus','categories','items','title','body','slug','post'));

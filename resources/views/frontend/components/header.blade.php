@@ -4,12 +4,12 @@
     <div class="headerTop-inner">
       <ul class="social-links">
         <li class="social-link">
-          <a href="https://www.instagram.com/minstroykomxoz/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/quriliskr/"><i class="fa-brands fa-instagram"></i></a>
         </li>
-        <li class="social-link"><a href="https://www.facebook.com/rk.minstroy"><i class="fa-brands fa-facebook"></i></a></li>
-        <li class="social-link"><a href="https://youtube.com/channel/UCCvBjFoldX3eeh4noocNLeA"><i class="fa-brands fa-youtube"></i></a></li>
+        <li class="social-link"><a href="https://www.facebook.com/qrqurilis"><i class="fa-brands fa-facebook"></i></a></li>
+        <li class="social-link"><a href="https://www.youtube.com/@quriliskr"><i class="fa-brands fa-youtube"></i></a></li>
         <li class="social-link"><a href="https://t.me/qurilisministrligi"><i class="fa-brands fa-telegram"></i></a></li>
-        <li class="social-link"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+        <li class="social-link"><a href="https://x.com/quriliskr"><i class="fa-brands fa-twitter"></i></a></li>
       </ul>
       <div class="topInner">
         <div class="phone">

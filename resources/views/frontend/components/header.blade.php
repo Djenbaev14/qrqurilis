@@ -9,7 +9,7 @@
         <li class="social-link"><a href="https://www.facebook.com/qrqurilis"><i class="fa-brands fa-facebook"></i></a></li>
         <li class="social-link"><a href="https://www.youtube.com/@quriliskr"><i class="fa-brands fa-youtube"></i></a></li>
         <li class="social-link"><a href="https://t.me/qurilisministrligi"><i class="fa-brands fa-telegram"></i></a></li>
-        <li class="social-link"><a href="https://x.com/quriliskr"><i class="fa-brands fa-twitter"></i></a></li>
+        <li class="social-link"><a href="https://x.com/quriliskr"><i class="fa-brands fa-x-twitter"></i></a></li>
       </ul>
       <div class="topInner">
         <div class="phone">

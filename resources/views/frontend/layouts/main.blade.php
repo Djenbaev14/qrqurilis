@@ -27,7 +27,7 @@
         @stack('js')
         @include('sweetalert::alert',['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
         <script>
-          window.replainSettings = { id: '0be94821-35a0-4277-86a7-fd025840a47c' };
+          window.replainSettings = { id: '239c7a5e-5eaf-4d65-82ad-be52e0c23d8a' };
           (function(u){var s=document.createElement('script');s.async=true;s.src=u;
           var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
           })('https://widget.replain.cc/dist/client.js');

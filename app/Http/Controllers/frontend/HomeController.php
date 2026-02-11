@@ -83,11 +83,11 @@ class HomeController extends Controller
             ->orWhere('slug_qr', $s)
             ->firstOrFail();
 
-        if ($post->slug_uz === $s) {
+        if ($post->slug_uz == $s) {
             app()->setLocale('uz');
-        } elseif ($post->slug_ru === $s) {
+        } elseif ($post->slug_ru == $s) {
             app()->setLocale('ru');
-        } elseif ($post->slug_qr === $s) {
+        } elseif ($post->slug_qr == $s) {
             app()->setLocale('qr');
         }
         return view('frontend.pages.news.new',compact('menus','categories','items','title','body','slug','post'));

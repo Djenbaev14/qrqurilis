@@ -9,6 +9,7 @@ use App\Models\Item;
 use App\Models\Menu;
 use App\Models\Post;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\App;
 
 class HomeController extends Controller
 {
@@ -71,11 +72,7 @@ class HomeController extends Controller
         $menus=Menu::orderBy('created_at','desc')->get();
         $items=Item::all();
         $categories=Category::orderBy('created_at','desc')->get();
-        $locale = session()->get('locale') ?? config('app.locale');
         
-        $title="title_$locale";
-        $body="body_$locale";
-        $slug="slug_$locale";
 
         // $post=Post::where($slug,$s)->first();
         $post = Post::where('slug_uz', $s)
@@ -84,12 +81,22 @@ class HomeController extends Controller
             ->firstOrFail();
 
         if ($post->slug_uz == $s) {
-            app()->setLocale('uz');
+            App::setLocale('uz');
+            Session::put("locale",'uz');
+            $locale='uz';
         } elseif ($post->slug_ru == $s) {
-            app()->setLocale('ru');
+            App::setLocale('ru');
+            Session::put("locale",'ru');
+                $locale='ru';
         } elseif ($post->slug_qr == $s) {
-            app()->setLocale('qr');
+            App::setLocale('qr');
+            Session::put("locale",'qr');
+                $locale='qr';
         }
+        
+        $title="title_$locale";
+        $body="body_$locale";
+        $slug="slug_$locale";
         return view('frontend.pages.news.new',compact('menus','categories','items','title','body','slug','post'));
     }
 

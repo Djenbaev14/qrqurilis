@@ -77,7 +77,19 @@ class HomeController extends Controller
         $body="body_$locale";
         $slug="slug_$locale";
 
-        $post=Post::where($slug,$s)->first();
+        // $post=Post::where($slug,$s)->first();
+        $post = Post::where('slug_uz', $s)
+            ->orWhere('slug_ru', $s)
+            ->orWhere('slug_qr', $s)
+            ->firstOrFail();
+
+        if ($post->slug_uz === $s) {
+            app()->setLocale('uz');
+        } elseif ($post->slug_ru === $s) {
+            app()->setLocale('ru');
+        } elseif ($post->slug_qr === $s) {
+            app()->setLocale('qr');
+        }
         return view('frontend.pages.news.new',compact('menus','categories','items','title','body','slug','post'));
     }
 
